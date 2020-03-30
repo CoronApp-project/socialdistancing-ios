@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07D1C537242A0CE400132137 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D1C536242A0CE400132137 /* AppDelegate.swift */; };
-		07D1C539242A0CE400132137 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D1C538242A0CE400132137 /* ViewController.swift */; };
-		07D1C53B242A0CE400132137 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 07D1C53A242A0CE400132137 /* Experience.rcproject */; };
-		07D1C53E242A0CE400132137 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D1C53C242A0CE400132137 /* Main.storyboard */; };
-		07D1C540242A0CE500132137 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07D1C53F242A0CE500132137 /* Assets.xcassets */; };
-		07D1C543242A0CE500132137 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D1C541242A0CE500132137 /* LaunchScreen.storyboard */; };
+		07CABE0D24322EE100260DEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE0C24322EE100260DEE /* AppDelegate.swift */; };
+		07CABE0F24322EE100260DEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE0E24322EE100260DEE /* SceneDelegate.swift */; };
+		07CABE1124322EE100260DEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE1024322EE100260DEE /* ViewController.swift */; };
+		07CABE1424322EE100260DEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE1224322EE100260DEE /* Main.storyboard */; };
+		07CABE1624322EE200260DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE1524322EE200260DEE /* Assets.xcassets */; };
+		07CABE1924322EE200260DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE1724322EE200260DEE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		07D1C533242A0CE400132137 /* SocialDistancing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialDistancing.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		07D1C536242A0CE400132137 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07D1C538242A0CE400132137 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		07D1C53A242A0CE400132137 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
-		07D1C53D242A0CE400132137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		07D1C53F242A0CE500132137 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		07D1C542242A0CE500132137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		07D1C544242A0CE500132137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07CABE0924322EE100260DEE /* SocialDistancing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialDistancing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07CABE0C24322EE100260DEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07CABE0E24322EE100260DEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		07CABE1024322EE100260DEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07CABE1324322EE100260DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07CABE1524322EE200260DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07CABE1824322EE200260DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07CABE1A24322EE200260DEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		07D1C530242A0CE400132137 /* Frameworks */ = {
+		07CABE0624322EE100260DEE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,32 +37,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07D1C52A242A0CE400132137 = {
+		07CABE0024322EE100260DEE = {
 			isa = PBXGroup;
 			children = (
-				07D1C535242A0CE400132137 /* SocialDistancing */,
-				07D1C534242A0CE400132137 /* Products */,
+				07CABE0B24322EE100260DEE /* SocialDistancing */,
+				07CABE0A24322EE100260DEE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		07D1C534242A0CE400132137 /* Products */ = {
+		07CABE0A24322EE100260DEE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				07D1C533242A0CE400132137 /* SocialDistancing.app */,
+				07CABE0924322EE100260DEE /* SocialDistancing.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		07D1C535242A0CE400132137 /* SocialDistancing */ = {
+		07CABE0B24322EE100260DEE /* SocialDistancing */ = {
 			isa = PBXGroup;
 			children = (
-				07D1C536242A0CE400132137 /* AppDelegate.swift */,
-				07D1C538242A0CE400132137 /* ViewController.swift */,
-				07D1C53A242A0CE400132137 /* Experience.rcproject */,
-				07D1C53C242A0CE400132137 /* Main.storyboard */,
-				07D1C53F242A0CE500132137 /* Assets.xcassets */,
-				07D1C541242A0CE500132137 /* LaunchScreen.storyboard */,
-				07D1C544242A0CE500132137 /* Info.plist */,
+				07CABE0C24322EE100260DEE /* AppDelegate.swift */,
+				07CABE0E24322EE100260DEE /* SceneDelegate.swift */,
+				07CABE1024322EE100260DEE /* ViewController.swift */,
+				07CABE1224322EE100260DEE /* Main.storyboard */,
+				07CABE1524322EE200260DEE /* Assets.xcassets */,
+				07CABE1724322EE200260DEE /* LaunchScreen.storyboard */,
+				07CABE1A24322EE200260DEE /* Info.plist */,
 			);
 			path = SocialDistancing;
 			sourceTree = "<group>";
@@ -70,13 +70,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		07D1C532242A0CE400132137 /* SocialDistancing */ = {
+		07CABE0824322EE100260DEE /* SocialDistancing */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07D1C547242A0CE500132137 /* Build configuration list for PBXNativeTarget "SocialDistancing" */;
+			buildConfigurationList = 07CABE1D24322EE200260DEE /* Build configuration list for PBXNativeTarget "SocialDistancing" */;
 			buildPhases = (
-				07D1C52F242A0CE400132137 /* Sources */,
-				07D1C530242A0CE400132137 /* Frameworks */,
-				07D1C531242A0CE400132137 /* Resources */,
+				07CABE0524322EE100260DEE /* Sources */,
+				07CABE0624322EE100260DEE /* Frameworks */,
+				07CABE0724322EE100260DEE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,25 +84,25 @@
 			);
 			name = SocialDistancing;
 			productName = SocialDistancing;
-			productReference = 07D1C533242A0CE400132137 /* SocialDistancing.app */;
+			productReference = 07CABE0924322EE100260DEE /* SocialDistancing.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		07D1C52B242A0CE400132137 /* Project object */ = {
+		07CABE0124322EE100260DEE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
-				ORGANIZATIONNAME = "Accenture Interactive";
+				ORGANIZATIONNAME = AndreaRov;
 				TargetAttributes = {
-					07D1C532242A0CE400132137 = {
+					07CABE0824322EE100260DEE = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 07D1C52E242A0CE400132137 /* Build configuration list for PBXProject "SocialDistancing" */;
+			buildConfigurationList = 07CABE0424322EE100260DEE /* Build configuration list for PBXProject "SocialDistancing" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 07D1C52A242A0CE400132137;
-			productRefGroup = 07D1C534242A0CE400132137 /* Products */;
+			mainGroup = 07CABE0024322EE100260DEE;
+			productRefGroup = 07CABE0A24322EE100260DEE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				07D1C532242A0CE400132137 /* SocialDistancing */,
+				07CABE0824322EE100260DEE /* SocialDistancing */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		07D1C531242A0CE400132137 /* Resources */ = {
+		07CABE0724322EE100260DEE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07D1C543242A0CE500132137 /* LaunchScreen.storyboard in Resources */,
-				07D1C540242A0CE500132137 /* Assets.xcassets in Resources */,
-				07D1C53E242A0CE400132137 /* Main.storyboard in Resources */,
+				07CABE1924322EE200260DEE /* LaunchScreen.storyboard in Resources */,
+				07CABE1624322EE200260DEE /* Assets.xcassets in Resources */,
+				07CABE1424322EE100260DEE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		07D1C52F242A0CE400132137 /* Sources */ = {
+		07CABE0524322EE100260DEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07D1C539242A0CE400132137 /* ViewController.swift in Sources */,
-				07D1C537242A0CE400132137 /* AppDelegate.swift in Sources */,
-				07D1C53B242A0CE400132137 /* Experience.rcproject in Sources */,
+				07CABE1124322EE100260DEE /* ViewController.swift in Sources */,
+				07CABE0D24322EE100260DEE /* AppDelegate.swift in Sources */,
+				07CABE0F24322EE100260DEE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		07D1C53C242A0CE400132137 /* Main.storyboard */ = {
+		07CABE1224322EE100260DEE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				07D1C53D242A0CE400132137 /* Base */,
+				07CABE1324322EE100260DEE /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		07D1C541242A0CE500132137 /* LaunchScreen.storyboard */ = {
+		07CABE1724322EE200260DEE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				07D1C542242A0CE500132137 /* Base */,
+				07CABE1824322EE200260DEE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		07D1C545242A0CE500132137 /* Debug */ = {
+		07CABE1B24322EE200260DEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -216,7 +216,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -226,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		07D1C546242A0CE500132137 /* Release */ = {
+		07CABE1C24322EE200260DEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -270,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -280,13 +280,14 @@
 			};
 			name = Release;
 		};
-		07D1C548242A0CE500132137 /* Debug */ = {
+		07CABE1E24322EE200260DEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = AC8QP6MBD6;
 				INFOPLIST_FILE = SocialDistancing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,13 +299,14 @@
 			};
 			name = Debug;
 		};
-		07D1C549242A0CE500132137 /* Release */ = {
+		07CABE1F24322EE200260DEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = AC8QP6MBD6;
 				INFOPLIST_FILE = SocialDistancing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,25 +321,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07D1C52E242A0CE400132137 /* Build configuration list for PBXProject "SocialDistancing" */ = {
+		07CABE0424322EE100260DEE /* Build configuration list for PBXProject "SocialDistancing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07D1C545242A0CE500132137 /* Debug */,
-				07D1C546242A0CE500132137 /* Release */,
+				07CABE1B24322EE200260DEE /* Debug */,
+				07CABE1C24322EE200260DEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07D1C547242A0CE500132137 /* Build configuration list for PBXNativeTarget "SocialDistancing" */ = {
+		07CABE1D24322EE200260DEE /* Build configuration list for PBXNativeTarget "SocialDistancing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07D1C548242A0CE500132137 /* Debug */,
-				07D1C549242A0CE500132137 /* Release */,
+				07CABE1E24322EE200260DEE /* Debug */,
+				07CABE1F24322EE200260DEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 07D1C52B242A0CE400132137 /* Project object */;
+	rootObject = 07CABE0124322EE100260DEE /* Project object */;
 }
