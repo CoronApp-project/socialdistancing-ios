@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		07CABE0D24322EE100260DEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE0C24322EE100260DEE /* AppDelegate.swift */; };
 		07CABE0F24322EE100260DEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE0E24322EE100260DEE /* SceneDelegate.swift */; };
-		07CABE1124322EE100260DEE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE1024322EE100260DEE /* HomeViewController.swift */; };
+		07CABE1124322EE100260DEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE1024322EE100260DEE /* ViewController.swift */; };
+		07CABE1424322EE100260DEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE1224322EE100260DEE /* Main.storyboard */; };
 		07CABE1624322EE200260DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE1524322EE200260DEE /* Assets.xcassets */; };
 		07CABE1924322EE200260DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE1724322EE200260DEE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,7 +19,8 @@
 		07CABE0924322EE100260DEE /* SocialDistancing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialDistancing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07CABE0C24322EE100260DEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07CABE0E24322EE100260DEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		07CABE1024322EE100260DEE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		07CABE1024322EE100260DEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07CABE1324322EE100260DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07CABE1524322EE200260DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07CABE1824322EE200260DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07CABE1A24322EE200260DEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,7 +58,8 @@
 			children = (
 				07CABE0C24322EE100260DEE /* AppDelegate.swift */,
 				07CABE0E24322EE100260DEE /* SceneDelegate.swift */,
-				07CABE1024322EE100260DEE /* HomeViewController.swift */,
+				07CABE1024322EE100260DEE /* ViewController.swift */,
+				07CABE1224322EE100260DEE /* Main.storyboard */,
 				07CABE1524322EE200260DEE /* Assets.xcassets */,
 				07CABE1724322EE200260DEE /* LaunchScreen.storyboard */,
 				07CABE1A24322EE200260DEE /* Info.plist */,
@@ -124,6 +127,7 @@
 			files = (
 				07CABE1924322EE200260DEE /* LaunchScreen.storyboard in Resources */,
 				07CABE1624322EE200260DEE /* Assets.xcassets in Resources */,
+				07CABE1424322EE100260DEE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07CABE1124322EE100260DEE /* HomeViewController.swift in Sources */,
+				07CABE1124322EE100260DEE /* ViewController.swift in Sources */,
 				07CABE0D24322EE100260DEE /* AppDelegate.swift in Sources */,
 				07CABE0F24322EE100260DEE /* SceneDelegate.swift in Sources */,
 			);
@@ -143,6 +147,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		07CABE1224322EE100260DEE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07CABE1324322EE100260DEE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		07CABE1724322EE200260DEE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,7 +295,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.accenture.SocialDistancing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -302,7 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.accenture.SocialDistancing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
