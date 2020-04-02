@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingViewController" customModule="SocialDistancing" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonsView" destination="Vgn-GR-OPj" id="TRy-r3-KWg"/>
+                <outlet property="carousel" destination="cIW-0a-aB9" id="Ro1-gq-Usf"/>
+                <outlet property="closeButton" destination="cgw-lA-10g" id="GGr-z5-C42"/>
+                <outlet property="nextButton" destination="txI-rr-4j9" id="zea-c6-z8q"/>
+                <outlet property="page" destination="3cw-oc-2OV" id="VHU-y7-QdE"/>
+                <outlet property="skipButton" destination="9qE-KO-8BG" id="c18-US-Y2H"/>
+                <outlet property="startButton" destination="pnq-Zi-TJz" id="QhJ-8Z-I5h"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgw-lA-10g" customClass="CrossButton" customModule="SocialDistancing" customModuleProvider="target">
+                    <rect key="frame" x="351" y="75" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="didPressCloseButton:" destination="-1" eventType="touchUpInside" id="unO-9g-qkx"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="cIW-0a-aB9">
+                    <rect key="frame" x="0.0" y="130" width="414" height="575"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Xko-hu-CVs">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vgn-GR-OPj">
+                    <rect key="frame" x="68.5" y="786" width="277" height="38"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qE-KO-8BG" customClass="BlueButton" customModule="SocialDistancing" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="121" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="121" id="eOe-er-1Pu"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="didPressSkipButton:" destination="-1" eventType="touchUpInside" id="u0I-FC-ZsF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txI-rr-4j9" customClass="BlueButton" customModule="SocialDistancing" customModuleProvider="target">
+                            <rect key="frame" x="156" y="0.0" width="121" height="38"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="didPressNextButton:" destination="-1" eventType="touchUpInside" id="j0Q-dU-ThP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="1FG-7O-pyS"/>
+                        <constraint firstAttribute="bottom" secondItem="txI-rr-4j9" secondAttribute="bottom" id="6uA-No-Hzb"/>
+                        <constraint firstItem="9qE-KO-8BG" firstAttribute="top" secondItem="Vgn-GR-OPj" secondAttribute="top" id="FNh-6Q-cJq"/>
+                        <constraint firstItem="9qE-KO-8BG" firstAttribute="leading" secondItem="Vgn-GR-OPj" secondAttribute="leading" id="GQS-86-6gR"/>
+                        <constraint firstItem="txI-rr-4j9" firstAttribute="top" secondItem="Vgn-GR-OPj" secondAttribute="top" id="WGM-8l-xIS"/>
+                        <constraint firstAttribute="trailing" secondItem="txI-rr-4j9" secondAttribute="trailing" id="lgH-Rv-2RH"/>
+                        <constraint firstAttribute="bottom" secondItem="9qE-KO-8BG" secondAttribute="bottom" id="q4G-0Y-yN0"/>
+                        <constraint firstItem="txI-rr-4j9" firstAttribute="leading" secondItem="9qE-KO-8BG" secondAttribute="trailing" constant="35" id="xJK-Mq-jmu"/>
+                        <constraint firstItem="9qE-KO-8BG" firstAttribute="width" secondItem="txI-rr-4j9" secondAttribute="width" id="xvD-jB-6zt"/>
+                    </constraints>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnq-Zi-TJz" customClass="BlueButton" customModule="SocialDistancing" customModuleProvider="target">
+                    <rect key="frame" x="146.5" y="786" width="121" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="121" id="3ol-5k-Tme"/>
+                        <constraint firstAttribute="height" constant="38" id="TLc-Sb-2SC"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="didPressStartButton:" destination="-1" eventType="touchUpInside" id="G4y-qV-lmf"/>
+                    </connections>
+                </button>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="3cw-oc-2OV">
+                    <rect key="frame" x="17" y="713" width="380" height="37"/>
+                    <color key="pageIndicatorTintColor" name="grey"/>
+                    <color key="currentPageIndicatorTintColor" name="blue"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3cw-oc-2OV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="17" id="0ux-kQ-tSk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cgw-lA-10g" secondAttribute="trailing" constant="17" id="2dY-Gy-gs5"/>
+                <constraint firstItem="3cw-oc-2OV" firstAttribute="bottom" secondItem="pnq-Zi-TJz" secondAttribute="top" constant="-36" id="De1-gJ-b1H"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="pnq-Zi-TJz" secondAttribute="bottom" constant="38" id="HOf-zw-NG9"/>
+                <constraint firstItem="cgw-lA-10g" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="31" id="UGr-PD-dKy"/>
+                <constraint firstItem="cIW-0a-aB9" firstAttribute="top" secondItem="cgw-lA-10g" secondAttribute="bottom" constant="25" id="VOE-rt-1WW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Vgn-GR-OPj" secondAttribute="bottom" constant="38" id="e5M-0Q-0ju"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cIW-0a-aB9" secondAttribute="trailing" id="fOY-dL-3yH"/>
+                <constraint firstItem="cIW-0a-aB9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="geO-sX-ahx"/>
+                <constraint firstItem="Vgn-GR-OPj" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="mrl-0t-Q7i"/>
+                <constraint firstItem="3cw-oc-2OV" firstAttribute="top" secondItem="cIW-0a-aB9" secondAttribute="bottom" constant="8" id="tUY-gD-chv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3cw-oc-2OV" secondAttribute="trailing" constant="17" id="u6d-d9-e3x"/>
+                <constraint firstItem="pnq-Zi-TJz" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="yX2-vf-Y9C"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="blue">
+            <color red="0.0040000001899898052" green="0.62400001287460327" blue="0.98400002717971802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grey">
+            <color red="0.84700000286102295" green="0.84700000286102295" blue="0.84700000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

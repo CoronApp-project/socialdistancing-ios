@@ -9,21 +9,49 @@
 /* Begin PBXBuildFile section */
 		07CABE0D24322EE100260DEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE0C24322EE100260DEE /* AppDelegate.swift */; };
 		07CABE0F24322EE100260DEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE0E24322EE100260DEE /* SceneDelegate.swift */; };
-		07CABE1124322EE100260DEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE1024322EE100260DEE /* ViewController.swift */; };
 		07CABE1424322EE100260DEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE1224322EE100260DEE /* Main.storyboard */; };
 		07CABE1624322EE200260DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE1524322EE200260DEE /* Assets.xcassets */; };
 		07CABE1924322EE200260DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE1724322EE200260DEE /* LaunchScreen.storyboard */; };
+		07CABE4B2433F18200260DEE /* ColorTheme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE4A2433F18200260DEE /* ColorTheme.xcassets */; };
+		07CABE4D2433F59200260DEE /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE4C2433F59200260DEE /* ColorTheme.swift */; };
+		07CABE502433FA2B00260DEE /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE4F2433FA2B00260DEE /* OpenSans-Bold.ttf */; };
+		07CABE522433FA3D00260DEE /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE512433FA3D00260DEE /* OpenSans-Light.ttf */; };
+		07CABE542433FA4300260DEE /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE532433FA4300260DEE /* OpenSans-Regular.ttf */; };
+		07CABE57243403EF00260DEE /* FontsStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE56243403EF00260DEE /* FontsStyle.swift */; };
+		07CABE5B24348DE500260DEE /* PageIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE5A24348DE500260DEE /* PageIndicatorView.swift */; };
+		07CABE612434D77900260DEE /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE602434D77900260DEE /* BlueButton.swift */; };
+		07CABE6624353FB000260DEE /* TutorialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE6424353FB000260DEE /* TutorialCell.swift */; };
+		07CABE6724353FB000260DEE /* TutorialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE6524353FB000260DEE /* TutorialCell.xib */; };
+		07CABE6B243543B400260DEE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE69243543B400260DEE /* OnboardingViewController.swift */; };
+		07CABE6C243543B400260DEE /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE6A243543B400260DEE /* OnboardingViewController.xib */; };
+		07CABE6E2435443100260DEE /* CrossButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE6D2435443100260DEE /* CrossButton.swift */; };
+		07CABE71243583BD00260DEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE70243583BD00260DEE /* ViewController.swift */; };
+		07CABE732435E03A00260DEE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE722435E03A00260DEE /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07CABE0924322EE100260DEE /* SocialDistancing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialDistancing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07CABE0C24322EE100260DEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07CABE0E24322EE100260DEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		07CABE1024322EE100260DEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07CABE1324322EE100260DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07CABE1524322EE200260DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07CABE1824322EE200260DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07CABE1A24322EE200260DEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07CABE4A2433F18200260DEE /* ColorTheme.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorTheme.xcassets; sourceTree = "<group>"; };
+		07CABE4C2433F59200260DEE /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
+		07CABE4F2433FA2B00260DEE /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		07CABE512433FA3D00260DEE /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		07CABE532433FA4300260DEE /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		07CABE56243403EF00260DEE /* FontsStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsStyle.swift; sourceTree = "<group>"; };
+		07CABE5A24348DE500260DEE /* PageIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageIndicatorView.swift; sourceTree = "<group>"; };
+		07CABE602434D77900260DEE /* BlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
+		07CABE6424353FB000260DEE /* TutorialCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCell.swift; sourceTree = "<group>"; };
+		07CABE6524353FB000260DEE /* TutorialCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialCell.xib; sourceTree = "<group>"; };
+		07CABE69243543B400260DEE /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		07CABE6A243543B400260DEE /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
+		07CABE6D2435443100260DEE /* CrossButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossButton.swift; sourceTree = "<group>"; };
+		07CABE70243583BD00260DEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07CABE722435E03A00260DEE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +86,59 @@
 			children = (
 				07CABE0C24322EE100260DEE /* AppDelegate.swift */,
 				07CABE0E24322EE100260DEE /* SceneDelegate.swift */,
-				07CABE1024322EE100260DEE /* ViewController.swift */,
-				07CABE1224322EE100260DEE /* Main.storyboard */,
+				07CABE6F243582A700260DEE /* Storyboards */,
+				07CABE682435437E00260DEE /* CustomViews */,
 				07CABE1524322EE200260DEE /* Assets.xcassets */,
-				07CABE1724322EE200260DEE /* LaunchScreen.storyboard */,
 				07CABE1A24322EE200260DEE /* Info.plist */,
+				07CABE1724322EE200260DEE /* LaunchScreen.storyboard */,
+				07CABE552433FA6900260DEE /* Colors */,
+				07CABE4E2433FA0100260DEE /* fonts */,
 			);
 			path = SocialDistancing;
+			sourceTree = "<group>";
+		};
+		07CABE4E2433FA0100260DEE /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				07CABE4F2433FA2B00260DEE /* OpenSans-Bold.ttf */,
+				07CABE512433FA3D00260DEE /* OpenSans-Light.ttf */,
+				07CABE532433FA4300260DEE /* OpenSans-Regular.ttf */,
+				07CABE56243403EF00260DEE /* FontsStyle.swift */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		07CABE552433FA6900260DEE /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				07CABE4A2433F18200260DEE /* ColorTheme.xcassets */,
+				07CABE4C2433F59200260DEE /* ColorTheme.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		07CABE682435437E00260DEE /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				07CABE5A24348DE500260DEE /* PageIndicatorView.swift */,
+				07CABE602434D77900260DEE /* BlueButton.swift */,
+				07CABE6D2435443100260DEE /* CrossButton.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		07CABE6F243582A700260DEE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				07CABE722435E03A00260DEE /* MainViewController.swift */,
+				07CABE1224322EE100260DEE /* Main.storyboard */,
+				07CABE70243583BD00260DEE /* ViewController.swift */,
+				07CABE6A243543B400260DEE /* OnboardingViewController.xib */,
+				07CABE6524353FB000260DEE /* TutorialCell.xib */,
+				07CABE69243543B400260DEE /* OnboardingViewController.swift */,
+				07CABE6424353FB000260DEE /* TutorialCell.swift */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +199,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07CABE522433FA3D00260DEE /* OpenSans-Light.ttf in Resources */,
 				07CABE1924322EE200260DEE /* LaunchScreen.storyboard in Resources */,
+				07CABE6C243543B400260DEE /* OnboardingViewController.xib in Resources */,
+				07CABE6724353FB000260DEE /* TutorialCell.xib in Resources */,
+				07CABE4B2433F18200260DEE /* ColorTheme.xcassets in Resources */,
+				07CABE542433FA4300260DEE /* OpenSans-Regular.ttf in Resources */,
 				07CABE1624322EE200260DEE /* Assets.xcassets in Resources */,
+				07CABE502433FA2B00260DEE /* OpenSans-Bold.ttf in Resources */,
 				07CABE1424322EE100260DEE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +218,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07CABE1124322EE100260DEE /* ViewController.swift in Sources */,
+				07CABE71243583BD00260DEE /* ViewController.swift in Sources */,
+				07CABE732435E03A00260DEE /* MainViewController.swift in Sources */,
+				07CABE57243403EF00260DEE /* FontsStyle.swift in Sources */,
+				07CABE5B24348DE500260DEE /* PageIndicatorView.swift in Sources */,
+				07CABE4D2433F59200260DEE /* ColorTheme.swift in Sources */,
+				07CABE612434D77900260DEE /* BlueButton.swift in Sources */,
 				07CABE0D24322EE100260DEE /* AppDelegate.swift in Sources */,
+				07CABE6624353FB000260DEE /* TutorialCell.swift in Sources */,
+				07CABE6B243543B400260DEE /* OnboardingViewController.swift in Sources */,
+				07CABE6E2435443100260DEE /* CrossButton.swift in Sources */,
 				07CABE0F24322EE100260DEE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

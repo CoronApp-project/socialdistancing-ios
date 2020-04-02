@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o30-fq-wKj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="G0h-cW-bZo">
+            <objects>
+                <viewController id="96d-lU-nFT" customClass="ViewController" customModule="SocialDistancing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YBQ-6H-aBI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4EY-Tb-ltg">
+                                <rect key="frame" x="10" y="94" width="394" height="709"/>
+                                <color key="backgroundColor" white="0.3221050941780822" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdb-Ty-uQD">
+                                <rect key="frame" x="350" y="51" width="46" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="cuf-bN-bv2"/>
+                                    <constraint firstAttribute="width" secondItem="vdb-Ty-uQD" secondAttribute="height" multiplier="46:43" id="drb-IT-Caa"/>
+                                </constraints>
+                                <state key="normal" image="person.crop.circle.badge.checkmark" catalog="system">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressTutorialButton:" destination="96d-lU-nFT" eventType="touchUpInside" id="24K-EJ-L23"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1Fi-Lh-7KT" firstAttribute="trailing" secondItem="4EY-Tb-ltg" secondAttribute="trailing" constant="10" id="0HX-4r-8ww"/>
+                            <constraint firstItem="vdb-Ty-uQD" firstAttribute="leading" secondItem="1Fi-Lh-7KT" secondAttribute="leading" constant="350" id="5UQ-mH-yQH"/>
+                            <constraint firstItem="1Fi-Lh-7KT" firstAttribute="trailing" secondItem="vdb-Ty-uQD" secondAttribute="trailing" constant="18" id="ewt-XQ-teU"/>
+                            <constraint firstItem="1Fi-Lh-7KT" firstAttribute="bottom" secondItem="4EY-Tb-ltg" secondAttribute="bottom" constant="10" id="k2d-1h-p5e"/>
+                            <constraint firstItem="4EY-Tb-ltg" firstAttribute="top" secondItem="1Fi-Lh-7KT" secondAttribute="top" constant="50" id="rOJ-iV-Xvw"/>
+                            <constraint firstItem="vdb-Ty-uQD" firstAttribute="bottom" secondItem="4EY-Tb-ltg" secondAttribute="top" id="sT2-27-mLD"/>
+                            <constraint firstItem="4EY-Tb-ltg" firstAttribute="leading" secondItem="1Fi-Lh-7KT" secondAttribute="leading" constant="10" id="ua8-c3-0Zb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Fi-Lh-7KT"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="ejX-Vi-TvR"/>
+                    <connections>
+                        <outlet property="tutorialButton" destination="vdb-Ty-uQD" id="KBT-jl-gwR"/>
+                        <segue destination="GyW-dD-bfn" kind="presentation" identifier="navigateToTutorial" id="kkx-S6-6vX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3sm-mO-xgn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1392.753623188406" y="483.48214285714283"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="xBC-sI-Ppl">
+            <objects>
+                <viewController id="Vam-51-TJr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ypq-x8-wBo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="KZD-Vq-YHe"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="1t8-hg-Mmz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l8V-lw-GYX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1394" y="-164"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2Ko-ic-ScD">
+            <objects>
+                <tabBarController modalPresentationStyle="fullScreen" id="o30-fq-wKj" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Zy5-sO-BRX"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xOj-8s-W4r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="96d-lU-nFT" kind="relationship" relationship="viewControllers" id="0bL-kb-G0Y"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nHE-Ye-Ljx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="474" y="160"/>
+        </scene>
+        <!--Onboarding View Controller-->
+        <scene sceneID="s4b-of-Gew">
+            <objects>
+                <viewController storyboardIdentifier="onboarding" id="GyW-dD-bfn" customClass="OnboardingViewController" customModule="SocialDistancing" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6hW-0S-vda" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2688" y="483"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.crop.circle.badge.checkmark" catalog="system" width="64" height="50"/>
+    </resources>
+</document>
