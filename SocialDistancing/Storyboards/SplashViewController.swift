@@ -39,6 +39,7 @@ final class SplashViewController: UIViewController {
             if isFirstTimeOpening() {
                 let nextViewController = OnboardingViewController()
                 nextViewController.modalPresentationStyle = .fullScreen
+                nextViewController.isFirstTimeShowing = true
                 
                 DispatchQueue.main.async {
                     self.getTopMostViewController()?.present(nextViewController, animated: false, completion: nil)

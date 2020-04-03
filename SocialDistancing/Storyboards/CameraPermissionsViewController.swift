@@ -15,6 +15,8 @@ final class CameraPermissionsViewController: UIViewController {
     @IBOutlet weak var noButton: BlueButton!
     @IBOutlet weak var okButton: BlueButton!
     
+    private var isFirstTimeAsked: Bool = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         messageLabel.text = "For this app to work, we need to access your camera. That cool?"
@@ -58,7 +60,7 @@ final class CameraPermissionsViewController: UIViewController {
                     }
                 }
                 
-            case .notDetermined:
+            case .notDetermined, .denied, .restricted:
                 
                 AVCaptureDevice.requestAccess(for: .video) { granted in
                     if granted {
@@ -79,11 +81,15 @@ final class CameraPermissionsViewController: UIViewController {
                             }
                         }
                         
+                    } else {
+                        DispatchQueue.main.async {
+                        self.showPhoneSettings()
+                        }
                     }
                 }
-            case .denied, .restricted:
-                showPhoneSettings()
-                return
+//            case .denied, .restricted:
+//                showPhoneSettings()
+//                return
                 
             @unknown default:
                 fatalError()
@@ -108,9 +114,15 @@ final class CameraPermissionsViewController: UIViewController {
     
     
     @IBAction func didPressCancelButton(_ sender: Any) {
-        messageLabel.text = "Are you sure? You’ll miss what this awesome app has to show you"
-        noButton.setTitle("I am sure", for: .normal)
-        okButton.setTitle("OK, access camera", for: .normal)
+        
+        if isFirstTimeAsked {
+            messageLabel.text = "Are you sure? You’ll miss what this awesome app has to show you"
+            noButton.setTitle("I am sure", for: .normal)
+            okButton.setTitle("OK, access camera", for: .normal)
+            isFirstTimeAsked = false
+        } else {
+            okButton.isHighlighted = true
+        }
     }
     
     
