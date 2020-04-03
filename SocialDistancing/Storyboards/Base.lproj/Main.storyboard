@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o30-fq-wKj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hj2-hh-a6w">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -12,15 +12,15 @@
             <objects>
                 <viewController id="96d-lU-nFT" customClass="ViewController" customModule="SocialDistancing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YBQ-6H-aBI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4EY-Tb-ltg">
-                                <rect key="frame" x="10" y="94" width="394" height="709"/>
+                                <rect key="frame" x="10" y="50" width="394" height="699"/>
                                 <color key="backgroundColor" white="0.3221050941780822" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdb-Ty-uQD">
-                                <rect key="frame" x="350" y="51" width="46" height="43"/>
+                                <rect key="frame" x="350" y="7" width="46" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="cuf-bN-bv2"/>
                                     <constraint firstAttribute="width" secondItem="vdb-Ty-uQD" secondAttribute="height" multiplier="46:43" id="drb-IT-Caa"/>
@@ -53,28 +53,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3sm-mO-xgn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1392.753623188406" y="483.48214285714283"/>
+            <point key="canvasLocation" x="-210" y="-682"/>
         </scene>
-        <!--Item 1-->
-        <scene sceneID="xBC-sI-Ppl">
-            <objects>
-                <viewController id="Vam-51-TJr" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ypq-x8-wBo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="KZD-Vq-YHe"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="1t8-hg-Mmz"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="l8V-lw-GYX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1394" y="-164"/>
-        </scene>
-        <!--Tab Bar Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="2Ko-ic-ScD">
             <objects>
-                <tabBarController modalPresentationStyle="fullScreen" id="o30-fq-wKj" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="menu" modalPresentationStyle="fullScreen" id="o30-fq-wKj" customClass="MenuViewController" customModule="SocialDistancing" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Zy5-sO-BRX"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xOj-8s-W4r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -87,18 +71,47 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nHE-Ye-Ljx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="474" y="160"/>
+            <point key="canvasLocation" x="-1459" y="-682"/>
         </scene>
         <!--Onboarding View Controller-->
         <scene sceneID="s4b-of-Gew">
             <objects>
-                <viewController storyboardIdentifier="onboarding" id="GyW-dD-bfn" customClass="OnboardingViewController" customModule="SocialDistancing" customModuleProvider="target" sceneMemberID="viewController"/>
+                <viewController storyboardIdentifier="onboarding" id="GyW-dD-bfn" customClass="OnboardingViewController" customModule="SocialDistancing" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Os3-Sd-CMj"/>
+                </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6hW-0S-vda" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2688" y="483"/>
+            <point key="canvasLocation" x="-2265" y="48"/>
+        </scene>
+        <!--Camera Permissions View Controller-->
+        <scene sceneID="ZKo-pX-3C7">
+            <objects>
+                <viewController storyboardIdentifier="cameraPermissions" modalPresentationStyle="fullScreen" id="C3g-8G-gOV" customClass="CameraPermissionsViewController" customModule="SocialDistancing" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="B86-LT-pI4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CXv-ft-gLb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2265" y="-1521"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="jbQ-O9-PAt">
+            <objects>
+                <viewController id="Hj2-hh-a6w" customClass="SplashViewController" customModule="SocialDistancing" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="GyW-dD-bfn" kind="show" identifier="splashToOnboarding" id="6Gd-mJ-PZF"/>
+                        <segue destination="C3g-8G-gOV" kind="show" identifier="splashToCameraPermissions" id="prP-eB-m3T"/>
+                        <segue destination="o30-fq-wKj" kind="show" identifier="splashToMenu" id="9AE-fl-TV9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NsT-Jd-jQx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3272" y="-682"/>
         </scene>
     </scenes>
     <resources>
         <image name="person.crop.circle.badge.checkmark" catalog="system" width="64" height="50"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="kkx-S6-6vX"/>
+    </inferredMetricsTieBreakers>
 </document>

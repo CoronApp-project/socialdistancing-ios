@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CameraPermissionsViewController" customModule="SocialDistancing" customModuleProvider="target">
+            <connections>
+                <outlet property="messageLabel" destination="a8C-kW-B9C" id="9vk-8g-0oa"/>
+                <outlet property="noButton" destination="1gH-GH-6Pl" id="Z7A-wz-soz"/>
+                <outlet property="okButton" destination="WPw-ZT-uB3" id="ed0-bm-5nK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r30-rm-qoh">
+                    <rect key="frame" x="0.0" y="358" width="414" height="190"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconCamera" translatesAutoresizingMaskIntoConstraints="NO" id="iYq-z3-O8y">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="123.5"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8C-kW-B9C">
+                            <rect key="frame" x="17" y="154.5" width="380" height="35.5"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="26"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="a8C-kW-B9C" firstAttribute="top" secondItem="iYq-z3-O8y" secondAttribute="bottom" constant="31" id="47R-JM-j5l"/>
+                        <constraint firstItem="iYq-z3-O8y" firstAttribute="top" secondItem="r30-rm-qoh" secondAttribute="top" id="9lc-9z-p3p"/>
+                        <constraint firstAttribute="trailing" secondItem="iYq-z3-O8y" secondAttribute="trailing" id="dCV-oT-0jh"/>
+                        <constraint firstItem="a8C-kW-B9C" firstAttribute="leading" secondItem="r30-rm-qoh" secondAttribute="leading" constant="17" id="jeU-2L-uSG"/>
+                        <constraint firstAttribute="bottom" secondItem="a8C-kW-B9C" secondAttribute="bottom" id="oIW-Q7-4LA"/>
+                        <constraint firstAttribute="trailing" secondItem="a8C-kW-B9C" secondAttribute="trailing" constant="17" id="uRj-dp-Gd4"/>
+                        <constraint firstItem="iYq-z3-O8y" firstAttribute="leading" secondItem="r30-rm-qoh" secondAttribute="leading" id="ygB-gN-lOu"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EId-pW-b66">
+                    <rect key="frame" x="143.5" y="615" width="127" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPw-ZT-uB3" customClass="BlueButton" customModule="SocialDistancing" customModuleProvider="target">
+                            <rect key="frame" x="81" y="0.0" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="didPressAceptButton:" destination="-1" eventType="touchUpInside" id="fWo-hy-XxV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gH-GH-6Pl" customClass="BlueButton" customModule="SocialDistancing" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="didPressCancelButton:" destination="-1" eventType="touchUpInside" id="mWM-sF-0gH"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="WPw-ZT-uB3" firstAttribute="leading" secondItem="1gH-GH-6Pl" secondAttribute="trailing" constant="35" id="4Fe-Da-HOh"/>
+                        <constraint firstAttribute="trailing" secondItem="WPw-ZT-uB3" secondAttribute="trailing" id="GxK-MT-g3V"/>
+                        <constraint firstAttribute="bottom" secondItem="WPw-ZT-uB3" secondAttribute="bottom" id="HBD-eW-Ttr"/>
+                        <constraint firstAttribute="bottom" secondItem="1gH-GH-6Pl" secondAttribute="bottom" id="OgI-rJ-U5W"/>
+                        <constraint firstItem="1gH-GH-6Pl" firstAttribute="top" secondItem="EId-pW-b66" secondAttribute="top" id="RDC-83-Nui"/>
+                        <constraint firstItem="1gH-GH-6Pl" firstAttribute="width" secondItem="WPw-ZT-uB3" secondAttribute="width" id="RcD-z2-6BC"/>
+                        <constraint firstItem="WPw-ZT-uB3" firstAttribute="top" secondItem="EId-pW-b66" secondAttribute="top" id="Thk-kY-ppC"/>
+                        <constraint firstItem="1gH-GH-6Pl" firstAttribute="leading" secondItem="EId-pW-b66" secondAttribute="leading" id="hYN-HQ-t88"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="EId-pW-b66" secondAttribute="bottom" id="19I-oW-evF"/>
+                <constraint firstItem="r30-rm-qoh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="5VZ-te-Vme"/>
+                <constraint firstItem="EId-pW-b66" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="V6y-zD-qhD"/>
+                <constraint firstItem="EId-pW-b66" firstAttribute="top" secondItem="a8C-kW-B9C" secondAttribute="bottom" constant="67" id="ef1-A8-xeD"/>
+                <constraint firstItem="r30-rm-qoh" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="jlb-W5-TFL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="r30-rm-qoh" secondAttribute="trailing" id="xeJ-V8-tjr"/>
+                <constraint firstItem="r30-rm-qoh" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="zvj-lL-dEx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconCamera" width="137" height="123.5"/>
+    </resources>
+</document>

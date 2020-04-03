@@ -22,11 +22,22 @@ final class OnboardingViewController: UIViewController, UICollectionViewDelegate
     let defaults = UserDefaults.standard
     
     private var pageNumber: Int = 0
-//    @Published var currentPage: String
+    var isFirstTimeShowing: Bool = false
+
 //    
     private var arrData = [TutorialViewData(imageName: "iconDistance", headline: "Keep distance", description: "Coronavirus is thought to spread from person to person. A person can become infected through close contact and respiratory droplets that come out of our mouth or nose (i.e. when we cough, sneeze, spit or talk). We are all responsible for preventing this!"),
                            TutorialViewData(imageName: "iconScan", headline: "Scan your surroundings", description: "Hold your phone in front of you while you move around. It will show you your ‘spreading area’. Within that area, the risk of getting infected or infecting others is higher."),
                            TutorialViewData(imageName: "iconVirus", headline: "Don't let others inside", description: "When a person gets inside your ‘spreading area’, you are too close. Your phone will notify you of that so you can move away.")]
+    
+    
+//    init(isFirstTimeShowing: Bool = false) {
+//        self.isFirstTimeShowing = isFirstTimeShowing
+//        super.init(nibName: "OnboardingViewController", bundle: Bundle(identifier: "onboarding"))
+//    }
+//
+//        required init?(coder: NSCoder) {
+//        fatalError("init(coder:) is not supported")
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,6 +67,8 @@ final class OnboardingViewController: UIViewController, UICollectionViewDelegate
         startButton.style = .blue
         startButton.isHidden = true
         setComponentsDataToNil()
+        
+        closeButton.isHidden = isFirstTimeShowing
     }
     
     private func setComponentsDataToNil() {
@@ -95,11 +108,27 @@ final class OnboardingViewController: UIViewController, UICollectionViewDelegate
     
     
     @IBAction func didPressCloseButton(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        if isFirstTimeShowing {
+            let nextViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "menu") as! MenuViewController
+            nextViewController.modalPresentationStyle = .fullScreen
+            self.getTopMostViewController()?.present(nextViewController, animated: false, completion: nil)
+            
+        } else {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
     @IBAction func didPressSkipButton(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        if isFirstTimeShowing {
+            DispatchQueue.main.async {
+                let nextViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "menu") as! MenuViewController
+                nextViewController.modalPresentationStyle = .fullScreen
+                self.getTopMostViewController()?.present(nextViewController, animated: false, completion: nil)
+            }
+            
+        } else {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
     @IBAction func didPressNextButton(_ sender: Any) {
@@ -110,7 +139,15 @@ final class OnboardingViewController: UIViewController, UICollectionViewDelegate
     }
     
     @IBAction func didPressStartButton(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        if isFirstTimeShowing {
+            
+            let nextViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "menu") as! MenuViewController
+            nextViewController.modalPresentationStyle = .fullScreen
+            self.getTopMostViewController()?.present(nextViewController, animated: false, completion: nil)
+            
+        } else {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
 }

@@ -17,7 +17,7 @@
                 <outlet property="page" destination="3cw-oc-2OV" id="VHU-y7-QdE"/>
                 <outlet property="skipButton" destination="9qE-KO-8BG" id="c18-US-Y2H"/>
                 <outlet property="startButton" destination="pnq-Zi-TJz" id="QhJ-8Z-I5h"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="D7o-hF-c2o"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

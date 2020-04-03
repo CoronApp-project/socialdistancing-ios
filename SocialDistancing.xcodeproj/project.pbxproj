@@ -26,7 +26,11 @@
 		07CABE6C243543B400260DEE /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE6A243543B400260DEE /* OnboardingViewController.xib */; };
 		07CABE6E2435443100260DEE /* CrossButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE6D2435443100260DEE /* CrossButton.swift */; };
 		07CABE71243583BD00260DEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE70243583BD00260DEE /* ViewController.swift */; };
-		07CABE732435E03A00260DEE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE722435E03A00260DEE /* MainViewController.swift */; };
+		07CABE732435E03A00260DEE /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE722435E03A00260DEE /* SplashViewController.swift */; };
+		07CABE752436176D00260DEE /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE742436176D00260DEE /* SplashViewController.xib */; };
+		07CABE782436382700260DEE /* CameraPermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE762436382700260DEE /* CameraPermissionsViewController.swift */; };
+		07CABE792436382700260DEE /* CameraPermissionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE772436382700260DEE /* CameraPermissionsViewController.xib */; };
+		07CABE7D24375DA900260DEE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE7C24375DA900260DEE /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +55,11 @@
 		07CABE6A243543B400260DEE /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
 		07CABE6D2435443100260DEE /* CrossButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossButton.swift; sourceTree = "<group>"; };
 		07CABE70243583BD00260DEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		07CABE722435E03A00260DEE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		07CABE722435E03A00260DEE /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		07CABE742436176D00260DEE /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		07CABE762436382700260DEE /* CameraPermissionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPermissionsViewController.swift; sourceTree = "<group>"; };
+		07CABE772436382700260DEE /* CameraPermissionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraPermissionsViewController.xib; sourceTree = "<group>"; };
+		07CABE7C24375DA900260DEE /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +97,7 @@
 				07CABE6F243582A700260DEE /* Storyboards */,
 				07CABE682435437E00260DEE /* CustomViews */,
 				07CABE1524322EE200260DEE /* Assets.xcassets */,
+				07CABE6D2435443100260DEE /* CrossButton.swift */,
 				07CABE1A24322EE200260DEE /* Info.plist */,
 				07CABE1724322EE200260DEE /* LaunchScreen.storyboard */,
 				07CABE552433FA6900260DEE /* Colors */,
@@ -122,7 +131,6 @@
 			children = (
 				07CABE5A24348DE500260DEE /* PageIndicatorView.swift */,
 				07CABE602434D77900260DEE /* BlueButton.swift */,
-				07CABE6D2435443100260DEE /* CrossButton.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -130,13 +138,17 @@
 		07CABE6F243582A700260DEE /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				07CABE722435E03A00260DEE /* MainViewController.swift */,
 				07CABE1224322EE100260DEE /* Main.storyboard */,
-				07CABE70243583BD00260DEE /* ViewController.swift */,
+				07CABE742436176D00260DEE /* SplashViewController.xib */,
+				07CABE772436382700260DEE /* CameraPermissionsViewController.xib */,
 				07CABE6A243543B400260DEE /* OnboardingViewController.xib */,
 				07CABE6524353FB000260DEE /* TutorialCell.xib */,
+				07CABE722435E03A00260DEE /* SplashViewController.swift */,
+				07CABE762436382700260DEE /* CameraPermissionsViewController.swift */,
 				07CABE69243543B400260DEE /* OnboardingViewController.swift */,
 				07CABE6424353FB000260DEE /* TutorialCell.swift */,
+				07CABE7C24375DA900260DEE /* MenuViewController.swift */,
+				07CABE70243583BD00260DEE /* ViewController.swift */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -202,7 +214,9 @@
 				07CABE522433FA3D00260DEE /* OpenSans-Light.ttf in Resources */,
 				07CABE1924322EE200260DEE /* LaunchScreen.storyboard in Resources */,
 				07CABE6C243543B400260DEE /* OnboardingViewController.xib in Resources */,
+				07CABE752436176D00260DEE /* SplashViewController.xib in Resources */,
 				07CABE6724353FB000260DEE /* TutorialCell.xib in Resources */,
+				07CABE792436382700260DEE /* CameraPermissionsViewController.xib in Resources */,
 				07CABE4B2433F18200260DEE /* ColorTheme.xcassets in Resources */,
 				07CABE542433FA4300260DEE /* OpenSans-Regular.ttf in Resources */,
 				07CABE1624322EE200260DEE /* Assets.xcassets in Resources */,
@@ -219,13 +233,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				07CABE71243583BD00260DEE /* ViewController.swift in Sources */,
-				07CABE732435E03A00260DEE /* MainViewController.swift in Sources */,
+				07CABE732435E03A00260DEE /* SplashViewController.swift in Sources */,
 				07CABE57243403EF00260DEE /* FontsStyle.swift in Sources */,
 				07CABE5B24348DE500260DEE /* PageIndicatorView.swift in Sources */,
 				07CABE4D2433F59200260DEE /* ColorTheme.swift in Sources */,
 				07CABE612434D77900260DEE /* BlueButton.swift in Sources */,
 				07CABE0D24322EE100260DEE /* AppDelegate.swift in Sources */,
+				07CABE7D24375DA900260DEE /* MenuViewController.swift in Sources */,
 				07CABE6624353FB000260DEE /* TutorialCell.swift in Sources */,
+				07CABE782436382700260DEE /* CameraPermissionsViewController.swift in Sources */,
 				07CABE6B243543B400260DEE /* OnboardingViewController.swift in Sources */,
 				07CABE6E2435443100260DEE /* CrossButton.swift in Sources */,
 				07CABE0F24322EE100260DEE /* SceneDelegate.swift in Sources */,

@@ -10,7 +10,7 @@ import UIKit
 
 final class CrossButton: UIButton {
     
-    private var crossImage: UIImage = UIImage(named: "closeIcon")!
+//    private var crossImage: UIImage? = UIImage(named: "closeIcon") //TODO: force crashed
     private let crossSize: CGFloat = 17
     
     override init(frame: CGRect) {
@@ -28,7 +28,7 @@ final class CrossButton: UIButton {
     }
     
     private func setStyle() {
-        self.setImage(crossImage, for: .normal)
+        self.setImage(UIImage(named: "closeicon"), for: .normal)
         self.tintColor = Color.black
     }
     

@@ -21,3 +21,28 @@ final class ViewController: UIViewController {
         self.performSegue(withIdentifier: "navigateToTutorial", sender: nil)
     }
 }
+
+
+extension UIViewController {
+    
+    func getTopMostViewController() -> UIViewController? {
+        
+        var topMostViewController = UIApplication.shared.keyWindowInConnectedScenes?.rootViewController
+        
+        while let presentedViewController = topMostViewController?.presentedViewController {
+            topMostViewController = presentedViewController
+        }
+        
+        return topMostViewController
+    }
+    
+}
+
+extension UIApplication {
+
+    /// The app's key window taking into consideration apps that support multiple scenes.
+    var keyWindowInConnectedScenes: UIWindow? {
+        return windows.first(where: { $0.isKeyWindow })
+    }
+
+}
