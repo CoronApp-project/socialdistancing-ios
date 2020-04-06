@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hj2-hh-a6w">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ulb-nf-BK7">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -12,15 +12,15 @@
             <objects>
                 <viewController id="96d-lU-nFT" customClass="ViewController" customModule="SocialDistancing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YBQ-6H-aBI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4EY-Tb-ltg">
-                                <rect key="frame" x="10" y="50" width="394" height="699"/>
+                                <rect key="frame" x="10" y="94" width="394" height="709"/>
                                 <color key="backgroundColor" white="0.3221050941780822" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdb-Ty-uQD">
-                                <rect key="frame" x="350" y="7" width="46" height="43"/>
+                                <rect key="frame" x="350" y="51" width="46" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="cuf-bN-bv2"/>
                                     <constraint firstAttribute="width" secondItem="vdb-Ty-uQD" secondAttribute="height" multiplier="46:43" id="drb-IT-Caa"/>
@@ -49,11 +49,36 @@
                     <connections>
                         <outlet property="tutorialButton" destination="vdb-Ty-uQD" id="KBT-jl-gwR"/>
                         <segue destination="GyW-dD-bfn" kind="presentation" identifier="navigateToTutorial" id="kkx-S6-6vX"/>
+                        <segue destination="Y0B-Uz-qbY" kind="show" id="Ir7-pC-Izg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3sm-mO-xgn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-210" y="-682"/>
+            <point key="canvasLocation" x="-664" y="-682"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0De-0u-iH1">
+            <objects>
+                <viewController id="Y0B-Uz-qbY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lMT-oR-qKI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="K1R-6w-ubN"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ay8-dG-av6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iFj-Xl-ygY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125" y="-116"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Vdq-Wd-IoR">
+            <objects>
+                <viewController id="Ulb-nf-BK7" customClass="ViewController" customModule="SocialDistancing" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KDl-bY-ath" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1528" y="-682"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="2Ko-ic-ScD">
@@ -71,7 +96,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nHE-Ye-Ljx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1459" y="-682"/>
+            <point key="canvasLocation" x="-1648" y="-682"/>
         </scene>
         <!--Onboarding View Controller-->
         <scene sceneID="s4b-of-Gew">
@@ -81,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6hW-0S-vda" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2265" y="48"/>
+            <point key="canvasLocation" x="125" y="-1341"/>
         </scene>
         <!--Camera Permissions View Controller-->
         <scene sceneID="ZKo-pX-3C7">
@@ -91,18 +116,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CXv-ft-gLb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2265" y="-1521"/>
+            <point key="canvasLocation" x="-2451" y="-682"/>
         </scene>
         <!--Splash View Controller-->
         <scene sceneID="jbQ-O9-PAt">
             <objects>
-                <viewController id="Hj2-hh-a6w" customClass="SplashViewController" customModule="SocialDistancing" customModuleProvider="target" sceneMemberID="viewController">
-                    <connections>
-                        <segue destination="GyW-dD-bfn" kind="show" identifier="splashToOnboarding" id="6Gd-mJ-PZF"/>
-                        <segue destination="C3g-8G-gOV" kind="show" identifier="splashToCameraPermissions" id="prP-eB-m3T"/>
-                        <segue destination="o30-fq-wKj" kind="show" identifier="splashToMenu" id="9AE-fl-TV9"/>
-                    </connections>
-                </viewController>
+                <viewController id="Hj2-hh-a6w" customClass="SplashViewController" customModule="SocialDistancing" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NsT-Jd-jQx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3272" y="-682"/>
@@ -111,7 +130,4 @@
     <resources>
         <image name="person.crop.circle.badge.checkmark" catalog="system" width="64" height="50"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="kkx-S6-6vX"/>
-    </inferredMetricsTieBreakers>
 </document>

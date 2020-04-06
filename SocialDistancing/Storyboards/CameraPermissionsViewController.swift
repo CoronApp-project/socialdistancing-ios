@@ -2,8 +2,7 @@
 //  CameraPermissionsViewController.swift
 //  SocialDistancing
 //
-//  Created by andrea roveres on 02/04/2020.
-//  Copyright © 2020 AndreaRov. All rights reserved.
+//  Created by AndreaRov on 02/04/2020.
 //
 
 import UIKit
@@ -11,95 +10,99 @@ import AVFoundation
 
 final class CameraPermissionsViewController: UIViewController {
     
-    @IBOutlet weak var messageLabel: UILabel!
-    @IBOutlet weak var noButton: BlueButton!
-    @IBOutlet weak var okButton: BlueButton!
+    @IBOutlet weak private var messageLabel: UILabel!
+    @IBOutlet weak private var noButton: BlueButton!
+    @IBOutlet weak private var okButton: BlueButton!
     
-    private var isFirstTimeAsked: Bool = true
+    @IBOutlet weak var btnWidth: NSLayoutConstraint!
+    private var highlightedActivated = false
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupFirstScreenViewData()
+        setupStyle()
+    }
+    
+    //MARK: - IBAction
+    
+    @IBAction func didPressCancelButton(_ sender: Any) {
+        btnWidth.constant = 177
+        setupSecondScreenViewData()
+        okButton.isHighlighted = highlightedActivated
+        highlightedActivated = true
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
+            guard let self = self else {debugPrint("CameraPermissionsViewController (=self) has been dealocated"); return}
+            self.okButton.isHighlighted = false
+        }
+    }
+    
+    @IBAction func didPressAceptButton(_ sender: Any) {
+        cammeraPermissions()
+    }
+    
+    //MARK: - Setup view
+    
+    private func setupFirstScreenViewData() {
         messageLabel.text = "For this app to work, we need to access your camera. That cool?"
         noButton.setTitle("Nope", for: .normal)
         okButton.setTitle("OK!", for: .normal)
+    }
+    
+    private func setupSecondScreenViewData() {
+        messageLabel.text = "Are you sure? You’ll miss what this awesome app has to show you"
+        noButton.setTitle("I am sure", for: .normal)
+        okButton.setTitle("OK, access camera", for: .normal)
+    }
+    
+    private func setupStyle() {
         noButton.style = .white
         okButton.style = .blue
     }
     
-    private func isFirstTimeOpening() -> Bool {
-        let defaults = UserDefaults.standard
-        
-        if defaults.bool(forKey: "hasBeenLaunchedBeforeFlag") == false {
-            defaults.set(true, forKey: "hasBeenLaunchedBeforeFlag")
-            return true
-        }
-        return false
-    }
+    //MARK: - Handle camera permissions
     
-     private func cammeraPermissions() {
+    private func cammeraPermissions() {
+ 
+        switch AVCaptureDevice.authorizationStatus(for: .video) {
             
-            let authStatus = AVCaptureDevice.authorizationStatus(for: .video)
+        case .authorized:
             
-            switch authStatus {
-            case .authorized:
+            guard firstTimeAppLaunches else {
+                self.navigateToMenu(modalPresentationStyle: .fullScreen)
+                return
+            }
+            self.navigateToOnboarding(modalPresentationStyle: .fullScreen)
+            
+        case .notDetermined, .denied, .restricted:
+            
+            AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
+                guard let self = self else {debugPrint("CameraPermissionsViewController (=self) has been dealocated"); return}
                 
-                if isFirstTimeOpening() {
-                    let nextViewController = OnboardingViewController()
-                    nextViewController.modalPresentationStyle = .fullScreen
-                    nextViewController.isFirstTimeShowing = true
-                    
+                guard granted else {
                     DispatchQueue.main.async {
-                        self.getTopMostViewController()?.present(nextViewController, animated: false, completion: nil)
-                    }
-                } else {
-                    
-                    DispatchQueue.main.async {
-                        let nextViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "menu") as! MenuViewController
-                        nextViewController.modalPresentationStyle = .fullScreen
-                        self.getTopMostViewController()?.present(nextViewController, animated: false, completion: nil)
-                    }
-                }
-                
-            case .notDetermined, .denied, .restricted:
-                
-                AVCaptureDevice.requestAccess(for: .video) { granted in
-                    if granted {
-                        
-                        if self.isFirstTimeOpening() {
-
-                            DispatchQueue.main.async {
-                                let nextViewController = OnboardingViewController()
-                                nextViewController.modalPresentationStyle = .fullScreen
-                                nextViewController.isFirstTimeShowing = true
-                                self.getTopMostViewController()?.present(nextViewController, animated: false, completion: nil)
-                            }
-                        } else {
-                            DispatchQueue.main.async {
-                                let nextViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "menu") as! MenuViewController
-                                nextViewController.modalPresentationStyle = .fullScreen
-                                self.getTopMostViewController()?.present(nextViewController, animated: false, completion: nil)
-                            }
-                        }
-                        
-                    } else {
-                        DispatchQueue.main.async {
                         self.showPhoneSettings()
-                        }
                     }
+                    return
                 }
-//            case .denied, .restricted:
-//                showPhoneSettings()
-//                return
                 
-            @unknown default:
-                fatalError()
+                guard self.firstTimeAppLaunches else {
+                    self.navigateToMenu(modalPresentationStyle: .fullScreen)
+                    return
+                }
+                self.navigateToOnboarding(modalPresentationStyle: .fullScreen)
             }
             
+        @unknown default:
+            debugPrint("Unknown case")
+            return
         }
+        
+    }
     
     
     private func showPhoneSettings() {
-        let alertController = UIAlertController(title: "Permission Error", message: "Permission denied, please allow our app permission through Settings in your phone if you want to use our service.", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Permission Denied", message: "Please allow the app, through Settings, to access your camera if you want to use our services.", preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Cancel", style: .default))
         alertController.addAction(UIAlertAction(title: "Settings", style: .cancel) { _ in
             if let url = URL(string: UIApplication.openSettingsURLString) {
@@ -108,26 +111,6 @@ final class CameraPermissionsViewController: UIViewController {
                 })
             }
         })
-        
         present(alertController, animated: true)
     }
-    
-    
-    @IBAction func didPressCancelButton(_ sender: Any) {
-        
-        if isFirstTimeAsked {
-            messageLabel.text = "Are you sure? You’ll miss what this awesome app has to show you"
-            noButton.setTitle("I am sure", for: .normal)
-            okButton.setTitle("OK, access camera", for: .normal)
-            isFirstTimeAsked = false
-        } else {
-            okButton.isHighlighted = true
-        }
-    }
-    
-    
-    @IBAction func didPressAceptButton(_ sender: Any) {
-        cammeraPermissions()
-    }
-    
 }

@@ -14,6 +14,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CameraPermissionsViewController" customModule="SocialDistancing" customModuleProvider="target">
             <connections>
+                <outlet property="btnWidth" destination="g0i-a6-ZiS" id="5qw-qh-mwL"/>
                 <outlet property="messageLabel" destination="a8C-kW-B9C" id="9vk-8g-0oa"/>
                 <outlet property="noButton" destination="1gH-GH-6Pl" id="Z7A-wz-soz"/>
                 <outlet property="okButton" destination="WPw-ZT-uB3" id="ed0-bm-5nK"/>
@@ -50,17 +51,20 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EId-pW-b66">
-                    <rect key="frame" x="143.5" y="615" width="127" height="30"/>
+                    <rect key="frame" x="68.5" y="615" width="277" height="30"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPw-ZT-uB3" customClass="BlueButton" customModule="SocialDistancing" customModuleProvider="target">
-                            <rect key="frame" x="81" y="0.0" width="46" height="30"/>
+                            <rect key="frame" x="156" y="0.0" width="121" height="30"/>
                             <state key="normal" title="Button"/>
                             <connections>
                                 <action selector="didPressAceptButton:" destination="-1" eventType="touchUpInside" id="fWo-hy-XxV"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gH-GH-6Pl" customClass="BlueButton" customModule="SocialDistancing" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                            <rect key="frame" x="0.0" y="0.0" width="121" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="121" id="g0i-a6-ZiS"/>
+                            </constraints>
                             <state key="normal" title="Button"/>
                             <connections>
                                 <action selector="didPressCancelButton:" destination="-1" eventType="touchUpInside" id="mWM-sF-0gH"/>
