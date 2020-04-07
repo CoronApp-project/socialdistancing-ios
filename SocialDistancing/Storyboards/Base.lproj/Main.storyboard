@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ulb-nf-BK7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hj2-hh-a6w">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -72,18 +72,18 @@
             </objects>
             <point key="canvasLocation" x="125" y="-116"/>
         </scene>
-        <!--View Controller-->
+        <!--Menu Tab Bar Controller-->
         <scene sceneID="Vdq-Wd-IoR">
             <objects>
-                <viewController id="Ulb-nf-BK7" customClass="ViewController" customModule="SocialDistancing" customModuleProvider="target" sceneMemberID="viewController"/>
+                <viewController id="Ulb-nf-BK7" customClass="MenuTabBarController" customModule="SocialDistancing" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KDl-bY-ath" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1528" y="-682"/>
         </scene>
-        <!--Menu View Controller-->
+        <!--Tab Bar Controller-->
         <scene sceneID="2Ko-ic-ScD">
             <objects>
-                <tabBarController storyboardIdentifier="menu" modalPresentationStyle="fullScreen" id="o30-fq-wKj" customClass="MenuViewController" customModule="SocialDistancing" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="menu" modalPresentationStyle="fullScreen" id="o30-fq-wKj" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Zy5-sO-BRX"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xOj-8s-W4r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>

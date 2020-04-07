@@ -11,13 +11,15 @@ extension UIViewController {
     
     var firstTimeAppLaunches: Bool {
         
-        if UserDefaults.standard.bool(forKey: "hasBeenLaunchedBeforeFlag") == false {
-            return true
+        if UserDefaults.standard.bool(forKey: "appLaunchesFirstTime") {
+            return false
         }
-        return false
+        return true
     }
     
-    func firstTimeAppLaunches(_ firsTime: Bool) {
-        UserDefaults.standard.set(firsTime, forKey: "hasBeenLaunchedBeforeFlag")
+    func firstTimeAppLaunches(_ firstTime: Bool) {
+        if !firstTime {
+            UserDefaults.standard.set(true, forKey: "appLaunchesFirstTime")
+        }
     }
 }

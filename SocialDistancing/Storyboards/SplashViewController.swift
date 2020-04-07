@@ -24,6 +24,10 @@ final class SplashViewController: UIViewController {
             return
         }
         
-        navigateToMenu(modalPresentationStyle: .fullScreen)
+        if firstTimeAppLaunches {
+            navigateToOnboarding()
+        } else {
+            navigateToMenu(modalPresentationStyle: .fullScreen)
+        }
     }
 }

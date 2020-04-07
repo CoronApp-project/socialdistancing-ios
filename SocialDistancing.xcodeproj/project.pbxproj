@@ -30,11 +30,21 @@
 		07CABE752436176D00260DEE /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE742436176D00260DEE /* SplashViewController.xib */; };
 		07CABE782436382700260DEE /* CameraPermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE762436382700260DEE /* CameraPermissionsViewController.swift */; };
 		07CABE792436382700260DEE /* CameraPermissionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE772436382700260DEE /* CameraPermissionsViewController.xib */; };
-		07CABE7D24375DA900260DEE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE7C24375DA900260DEE /* MenuViewController.swift */; };
+		07CABE7D24375DA900260DEE /* MenuTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE7C24375DA900260DEE /* MenuTabBarController.swift */; };
 		07CABE81243815B200260DEE /* UIViewController+AppNavigationFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE80243815B200260DEE /* UIViewController+AppNavigationFlow.swift */; };
 		07CABE85243A787B00260DEE /* CustomPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE84243A787B00260DEE /* CustomPrint.swift */; };
 		07CABE87243A841800260DEE /* UIViewController+FirstLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE86243A841800260DEE /* UIViewController+FirstLaunch.swift */; };
 		07CABE89243A84AC00260DEE /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE88243A84AC00260DEE /* UIApplication+.swift */; };
+		07CABE8B243B2B1F00260DEE /* news.json in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE8A243B2B1F00260DEE /* news.json */; };
+		07CABE8F243B2F9600260DEE /* MenuTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE8E243B2F9600260DEE /* MenuTabBarController.xib */; };
+		07CABE91243B314000260DEE /* ARViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE90243B314000260DEE /* ARViewController.xib */; };
+		07CABE93243B325C00260DEE /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE92243B325C00260DEE /* ARViewController.swift */; };
+		07CABE96243B524500260DEE /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE94243B524500260DEE /* NewsViewController.swift */; };
+		07CABE97243B524500260DEE /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE95243B524500260DEE /* NewsViewController.xib */; };
+		07CABE99243B5AD600260DEE /* JsonHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE98243B5AD600260DEE /* JsonHandler.swift */; };
+		07CABE9C243B5BD700260DEE /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE9A243B5BD700260DEE /* NewsCell.swift */; };
+		07CABE9D243B5BD700260DEE /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE9B243B5BD700260DEE /* NewsCell.xib */; };
+		07CABE9F243B9F8800260DEE /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE9E243B9F8800260DEE /* UIImageView+DownloadImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,11 +73,21 @@
 		07CABE742436176D00260DEE /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		07CABE762436382700260DEE /* CameraPermissionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPermissionsViewController.swift; sourceTree = "<group>"; };
 		07CABE772436382700260DEE /* CameraPermissionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraPermissionsViewController.xib; sourceTree = "<group>"; };
-		07CABE7C24375DA900260DEE /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		07CABE7C24375DA900260DEE /* MenuTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarController.swift; sourceTree = "<group>"; };
 		07CABE80243815B200260DEE /* UIViewController+AppNavigationFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AppNavigationFlow.swift"; sourceTree = "<group>"; };
 		07CABE84243A787B00260DEE /* CustomPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPrint.swift; sourceTree = "<group>"; };
 		07CABE86243A841800260DEE /* UIViewController+FirstLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+FirstLaunch.swift"; sourceTree = "<group>"; };
 		07CABE88243A84AC00260DEE /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
+		07CABE8A243B2B1F00260DEE /* news.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = news.json; sourceTree = "<group>"; };
+		07CABE8E243B2F9600260DEE /* MenuTabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTabBarController.xib; sourceTree = "<group>"; };
+		07CABE90243B314000260DEE /* ARViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARViewController.xib; sourceTree = "<group>"; };
+		07CABE92243B325C00260DEE /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		07CABE94243B524500260DEE /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		07CABE95243B524500260DEE /* NewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
+		07CABE98243B5AD600260DEE /* JsonHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHandler.swift; sourceTree = "<group>"; };
+		07CABE9A243B5BD700260DEE /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		07CABE9B243B5BD700260DEE /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
+		07CABE9E243B9F8800260DEE /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,16 +171,26 @@
 				07CABE772436382700260DEE /* CameraPermissionsViewController.xib */,
 				07CABE6A243543B400260DEE /* OnboardingViewController.xib */,
 				07CABE6524353FB000260DEE /* TutorialCell.xib */,
+				07CABE8E243B2F9600260DEE /* MenuTabBarController.xib */,
+				07CABE90243B314000260DEE /* ARViewController.xib */,
+				07CABE95243B524500260DEE /* NewsViewController.xib */,
+				07CABE9B243B5BD700260DEE /* NewsCell.xib */,
 				07CABE722435E03A00260DEE /* SplashViewController.swift */,
 				07CABE762436382700260DEE /* CameraPermissionsViewController.swift */,
 				07CABE69243543B400260DEE /* OnboardingViewController.swift */,
 				07CABE6424353FB000260DEE /* TutorialCell.swift */,
-				07CABE7C24375DA900260DEE /* MenuViewController.swift */,
+				07CABE7C24375DA900260DEE /* MenuTabBarController.swift */,
+				07CABE92243B325C00260DEE /* ARViewController.swift */,
+				07CABE94243B524500260DEE /* NewsViewController.swift */,
+				07CABE9A243B5BD700260DEE /* NewsCell.swift */,
 				07CABE70243583BD00260DEE /* ViewController.swift */,
 				07CABE80243815B200260DEE /* UIViewController+AppNavigationFlow.swift */,
 				07CABE86243A841800260DEE /* UIViewController+FirstLaunch.swift */,
 				07CABE88243A84AC00260DEE /* UIApplication+.swift */,
+				07CABE9E243B9F8800260DEE /* UIImageView+DownloadImage.swift */,
 				07CABE84243A787B00260DEE /* CustomPrint.swift */,
+				07CABE98243B5AD600260DEE /* JsonHandler.swift */,
+				07CABE8A243B2B1F00260DEE /* news.json */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -225,15 +255,20 @@
 			files = (
 				07CABE522433FA3D00260DEE /* OpenSans-Light.ttf in Resources */,
 				07CABE1924322EE200260DEE /* LaunchScreen.storyboard in Resources */,
+				07CABE97243B524500260DEE /* NewsViewController.xib in Resources */,
 				07CABE6C243543B400260DEE /* OnboardingViewController.xib in Resources */,
 				07CABE752436176D00260DEE /* SplashViewController.xib in Resources */,
 				07CABE6724353FB000260DEE /* TutorialCell.xib in Resources */,
 				07CABE792436382700260DEE /* CameraPermissionsViewController.xib in Resources */,
+				07CABE8B243B2B1F00260DEE /* news.json in Resources */,
 				07CABE4B2433F18200260DEE /* ColorTheme.xcassets in Resources */,
 				07CABE542433FA4300260DEE /* OpenSans-Regular.ttf in Resources */,
+				07CABE9D243B5BD700260DEE /* NewsCell.xib in Resources */,
 				07CABE1624322EE200260DEE /* Assets.xcassets in Resources */,
 				07CABE502433FA2B00260DEE /* OpenSans-Bold.ttf in Resources */,
+				07CABE8F243B2F9600260DEE /* MenuTabBarController.xib in Resources */,
 				07CABE1424322EE100260DEE /* Main.storyboard in Resources */,
+				07CABE91243B314000260DEE /* ARViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,17 +282,22 @@
 				07CABE71243583BD00260DEE /* ViewController.swift in Sources */,
 				07CABE732435E03A00260DEE /* SplashViewController.swift in Sources */,
 				07CABE57243403EF00260DEE /* FontsStyle.swift in Sources */,
+				07CABE93243B325C00260DEE /* ARViewController.swift in Sources */,
 				07CABE85243A787B00260DEE /* CustomPrint.swift in Sources */,
 				07CABE5B24348DE500260DEE /* PageIndicatorView.swift in Sources */,
 				07CABE4D2433F59200260DEE /* ColorTheme.swift in Sources */,
+				07CABE96243B524500260DEE /* NewsViewController.swift in Sources */,
 				07CABE612434D77900260DEE /* BlueButton.swift in Sources */,
 				07CABE0D24322EE100260DEE /* AppDelegate.swift in Sources */,
+				07CABE9F243B9F8800260DEE /* UIImageView+DownloadImage.swift in Sources */,
+				07CABE9C243B5BD700260DEE /* NewsCell.swift in Sources */,
 				07CABE87243A841800260DEE /* UIViewController+FirstLaunch.swift in Sources */,
-				07CABE7D24375DA900260DEE /* MenuViewController.swift in Sources */,
+				07CABE7D24375DA900260DEE /* MenuTabBarController.swift in Sources */,
 				07CABE81243815B200260DEE /* UIViewController+AppNavigationFlow.swift in Sources */,
 				07CABE89243A84AC00260DEE /* UIApplication+.swift in Sources */,
 				07CABE6624353FB000260DEE /* TutorialCell.swift in Sources */,
 				07CABE782436382700260DEE /* CameraPermissionsViewController.swift in Sources */,
+				07CABE99243B5AD600260DEE /* JsonHandler.swift in Sources */,
 				07CABE6B243543B400260DEE /* OnboardingViewController.swift in Sources */,
 				07CABE6E2435443100260DEE /* CrossButton.swift in Sources */,
 				07CABE0F24322EE100260DEE /* SceneDelegate.swift in Sources */,

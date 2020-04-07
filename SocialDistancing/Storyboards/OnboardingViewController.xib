@@ -25,15 +25,15 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgw-lA-10g" customClass="CrossButton" customModule="SocialDistancing" customModuleProvider="target">
-                    <rect key="frame" x="351" y="75" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgw-lA-10g" customClass="CrossButton" customModule="SocialDistancing" customModuleProvider="target">
+                    <rect key="frame" x="362" y="75" width="35" height="34"/>
+                    <state key="normal" image="closeicon"/>
                     <connections>
                         <action selector="didPressCloseButton:" destination="-1" eventType="touchUpInside" id="unO-9g-qkx"/>
                     </connections>
                 </button>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="cIW-0a-aB9">
-                    <rect key="frame" x="0.0" y="130" width="414" height="575"/>
+                    <rect key="frame" x="0.0" y="134" width="414" height="571"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Xko-hu-CVs">
                         <size key="itemSize" width="50" height="50"/>
@@ -114,6 +114,7 @@
         </view>
     </objects>
     <resources>
+        <image name="closeicon" width="17.5" height="17"/>
         <namedColor name="blue">
             <color red="0.0040000001899898052" green="0.62400001287460327" blue="0.98400002717971802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

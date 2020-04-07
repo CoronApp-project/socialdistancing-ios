@@ -20,10 +20,10 @@ extension UIViewController {
     }
     
     func navigateToOnboarding(modalPresentationStyle: UIModalPresentationStyle = .automatic) {
-        let onboardingViewController = OnboardingViewController()
-        onboardingViewController.modalPresentationStyle = modalPresentationStyle
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
+            let onboardingViewController = OnboardingViewController()
+                  onboardingViewController.modalPresentationStyle = modalPresentationStyle
             self.present(onboardingViewController, animated: true, completion: nil)
         }
     }
@@ -31,16 +31,16 @@ extension UIViewController {
     func navigateToMenu(modalPresentationStyle: UIModalPresentationStyle = .automatic) {
         
         DispatchQueue.main.async { [weak self] in
-            let nextViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "menu") as! MenuViewController
+            let nextViewController = MenuTabBarController()
             nextViewController.modalPresentationStyle = modalPresentationStyle
             self?.topMostViewController?.present(nextViewController, animated: false, completion: nil)
         }
     }
     
     func navigateToCameraPermissions() {
-        let nextViewController = CameraPermissionsViewController()
-        nextViewController.modalPresentationStyle = .fullScreen
         DispatchQueue.main.async { [weak self] in
+            let nextViewController = CameraPermissionsViewController()
+            nextViewController.modalPresentationStyle = .fullScreen
             self?.topMostViewController?.present(nextViewController, animated: false, completion: nil)
         }
     }
