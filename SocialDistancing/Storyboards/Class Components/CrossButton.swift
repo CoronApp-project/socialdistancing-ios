@@ -2,8 +2,7 @@
 //  CrossButton.swift
 //  SocialDistancing
 //
-//  Created by andrea roveres on 01/04/2020.
-//  Copyright © 2020 AndreaRov. All rights reserved.
+//  Created by AndreaRov on 01/04/2020.
 //
 
 import UIKit

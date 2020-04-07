@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Combine
 
 final class OnboardingViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     

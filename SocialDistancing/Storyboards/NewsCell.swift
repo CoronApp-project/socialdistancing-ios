@@ -2,8 +2,7 @@
 //  NewsCell.swift
 //  SocialDistancing
 //
-//  Created by andrea roveres on 06/04/2020.
-//  Copyright © 2020 AndreaRov. All rights reserved.
+//  Created by AndreaRov on 06/04/2020.
 //
 
 import UIKit

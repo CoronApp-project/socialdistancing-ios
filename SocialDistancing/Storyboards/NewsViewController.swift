@@ -2,8 +2,7 @@
 //  NewsViewController.swift
 //  SocialDistancing
 //
-//  Created by andrea roveres on 06/04/2020.
-//  Copyright © 2020 AndreaRov. All rights reserved.
+//  Created by AndreaRov on 06/04/2020.
 //
 
 import UIKit
@@ -34,7 +33,6 @@ final class NewsViewController: UIViewController, UITableViewDelegate, UITableVi
         tableView.dataSource = self
         let nib = UINib.init(nibName: "NewsCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: NewsCell.identifier)
-        //tableView.estimatedRowHeight = 700
         tableView.separatorStyle = .none
         loadNews()
     }

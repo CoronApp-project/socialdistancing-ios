@@ -27,8 +27,6 @@ final class MenuTabBarController: UITabBarController, UITabBarControllerDelegate
         firstVC.tabBarItem = tabOneBarItem
         secondVC.tabBarItem = tabTwoBarItem2
         self.viewControllers = [firstVC, secondVC]
-        
-        debugPrint(Locale.current.languageCode)
     }
     
     

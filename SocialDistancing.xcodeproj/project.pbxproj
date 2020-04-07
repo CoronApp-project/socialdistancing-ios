@@ -18,7 +18,6 @@
 		07CABE522433FA3D00260DEE /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE512433FA3D00260DEE /* OpenSans-Light.ttf */; };
 		07CABE542433FA4300260DEE /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE532433FA4300260DEE /* OpenSans-Regular.ttf */; };
 		07CABE57243403EF00260DEE /* FontsStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE56243403EF00260DEE /* FontsStyle.swift */; };
-		07CABE5B24348DE500260DEE /* PageIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE5A24348DE500260DEE /* PageIndicatorView.swift */; };
 		07CABE612434D77900260DEE /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE602434D77900260DEE /* BlueButton.swift */; };
 		07CABE6624353FB000260DEE /* TutorialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE6424353FB000260DEE /* TutorialCell.swift */; };
 		07CABE6724353FB000260DEE /* TutorialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE6524353FB000260DEE /* TutorialCell.xib */; };
@@ -41,10 +40,15 @@
 		07CABE93243B325C00260DEE /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE92243B325C00260DEE /* ARViewController.swift */; };
 		07CABE96243B524500260DEE /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE94243B524500260DEE /* NewsViewController.swift */; };
 		07CABE97243B524500260DEE /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE95243B524500260DEE /* NewsViewController.xib */; };
-		07CABE99243B5AD600260DEE /* JsonHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE98243B5AD600260DEE /* JsonHandler.swift */; };
+		07CABE99243B5AD600260DEE /* JsonLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE98243B5AD600260DEE /* JsonLoader.swift */; };
 		07CABE9C243B5BD700260DEE /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE9A243B5BD700260DEE /* NewsCell.swift */; };
 		07CABE9D243B5BD700260DEE /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE9B243B5BD700260DEE /* NewsCell.xib */; };
 		07CABE9F243B9F8800260DEE /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE9E243B9F8800260DEE /* UIImageView+DownloadImage.swift */; };
+		07CABEA1243C821700260DEE /* NewsLoaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABEA0243C821700260DEE /* NewsLoaderManager.swift */; };
+		07CABEA4243C824D00260DEE /* NewsItemMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABEA3243C824D00260DEE /* NewsItemMapper.swift */; };
+		07CABEA6243C82A100260DEE /* JsonLoaderHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABEA5243C82A100260DEE /* JsonLoaderHandler.swift */; };
+		07CABEA8243C830500260DEE /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABEA7243C830500260DEE /* News.swift */; };
+		07CABEAA243C834800260DEE /* NewsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABEA9243C834800260DEE /* NewsLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,7 +65,6 @@
 		07CABE512433FA3D00260DEE /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		07CABE532433FA4300260DEE /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		07CABE56243403EF00260DEE /* FontsStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsStyle.swift; sourceTree = "<group>"; };
-		07CABE5A24348DE500260DEE /* PageIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageIndicatorView.swift; sourceTree = "<group>"; };
 		07CABE602434D77900260DEE /* BlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
 		07CABE6424353FB000260DEE /* TutorialCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCell.swift; sourceTree = "<group>"; };
 		07CABE6524353FB000260DEE /* TutorialCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialCell.xib; sourceTree = "<group>"; };
@@ -84,10 +87,15 @@
 		07CABE92243B325C00260DEE /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		07CABE94243B524500260DEE /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		07CABE95243B524500260DEE /* NewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
-		07CABE98243B5AD600260DEE /* JsonHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHandler.swift; sourceTree = "<group>"; };
+		07CABE98243B5AD600260DEE /* JsonLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonLoader.swift; sourceTree = "<group>"; };
 		07CABE9A243B5BD700260DEE /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		07CABE9B243B5BD700260DEE /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
 		07CABE9E243B9F8800260DEE /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
+		07CABEA0243C821700260DEE /* NewsLoaderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsLoaderManager.swift; sourceTree = "<group>"; };
+		07CABEA3243C824D00260DEE /* NewsItemMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItemMapper.swift; sourceTree = "<group>"; };
+		07CABEA5243C82A100260DEE /* JsonLoaderHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonLoaderHandler.swift; sourceTree = "<group>"; };
+		07CABEA7243C830500260DEE /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		07CABEA9243C834800260DEE /* NewsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,18 +131,15 @@
 				07CABE0C24322EE100260DEE /* AppDelegate.swift */,
 				07CABE0E24322EE100260DEE /* SceneDelegate.swift */,
 				07CABE6F243582A700260DEE /* Storyboards */,
-				07CABE682435437E00260DEE /* CustomViews */,
+				07CABEA2243C822F00260DEE /* New Group */,
 				07CABE1524322EE200260DEE /* Assets.xcassets */,
-				07CABE6D2435443100260DEE /* CrossButton.swift */,
 				07CABE1A24322EE200260DEE /* Info.plist */,
 				07CABE1724322EE200260DEE /* LaunchScreen.storyboard */,
-				07CABE552433FA6900260DEE /* Colors */,
-				07CABE4E2433FA0100260DEE /* fonts */,
 			);
 			path = SocialDistancing;
 			sourceTree = "<group>";
 		};
-		07CABE4E2433FA0100260DEE /* fonts */ = {
+		07CABE4E2433FA0100260DEE /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
 				07CABE4F2433FA2B00260DEE /* OpenSans-Bold.ttf */,
@@ -142,7 +147,7 @@
 				07CABE532433FA4300260DEE /* OpenSans-Regular.ttf */,
 				07CABE56243403EF00260DEE /* FontsStyle.swift */,
 			);
-			path = fonts;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		07CABE552433FA6900260DEE /* Colors */ = {
@@ -154,13 +159,13 @@
 			path = Colors;
 			sourceTree = "<group>";
 		};
-		07CABE682435437E00260DEE /* CustomViews */ = {
+		07CABE682435437E00260DEE /* Class Components */ = {
 			isa = PBXGroup;
 			children = (
-				07CABE5A24348DE500260DEE /* PageIndicatorView.swift */,
 				07CABE602434D77900260DEE /* BlueButton.swift */,
+				07CABE6D2435443100260DEE /* CrossButton.swift */,
 			);
-			path = CustomViews;
+			path = "Class Components";
 			sourceTree = "<group>";
 		};
 		07CABE6F243582A700260DEE /* Storyboards */ = {
@@ -184,15 +189,38 @@
 				07CABE94243B524500260DEE /* NewsViewController.swift */,
 				07CABE9A243B5BD700260DEE /* NewsCell.swift */,
 				07CABE70243583BD00260DEE /* ViewController.swift */,
+				07CABE682435437E00260DEE /* Class Components */,
+				07CABEAB243C841F00260DEE /* Helpers */,
+				07CABE552433FA6900260DEE /* Colors */,
+				07CABE4E2433FA0100260DEE /* Fonts */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		07CABEA2243C822F00260DEE /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				07CABE98243B5AD600260DEE /* JsonLoader.swift */,
+				07CABEA9243C834800260DEE /* NewsLoader.swift */,
+				07CABEA7243C830500260DEE /* News.swift */,
+				07CABEA5243C82A100260DEE /* JsonLoaderHandler.swift */,
+				07CABEA0243C821700260DEE /* NewsLoaderManager.swift */,
+				07CABEA3243C824D00260DEE /* NewsItemMapper.swift */,
+				07CABE8A243B2B1F00260DEE /* news.json */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		07CABEAB243C841F00260DEE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
 				07CABE80243815B200260DEE /* UIViewController+AppNavigationFlow.swift */,
 				07CABE86243A841800260DEE /* UIViewController+FirstLaunch.swift */,
 				07CABE88243A84AC00260DEE /* UIApplication+.swift */,
 				07CABE9E243B9F8800260DEE /* UIImageView+DownloadImage.swift */,
 				07CABE84243A787B00260DEE /* CustomPrint.swift */,
-				07CABE98243B5AD600260DEE /* JsonHandler.swift */,
-				07CABE8A243B2B1F00260DEE /* news.json */,
 			);
-			path = Storyboards;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,22 +312,26 @@
 				07CABE57243403EF00260DEE /* FontsStyle.swift in Sources */,
 				07CABE93243B325C00260DEE /* ARViewController.swift in Sources */,
 				07CABE85243A787B00260DEE /* CustomPrint.swift in Sources */,
-				07CABE5B24348DE500260DEE /* PageIndicatorView.swift in Sources */,
 				07CABE4D2433F59200260DEE /* ColorTheme.swift in Sources */,
+				07CABEA6243C82A100260DEE /* JsonLoaderHandler.swift in Sources */,
 				07CABE96243B524500260DEE /* NewsViewController.swift in Sources */,
+				07CABEA4243C824D00260DEE /* NewsItemMapper.swift in Sources */,
 				07CABE612434D77900260DEE /* BlueButton.swift in Sources */,
 				07CABE0D24322EE100260DEE /* AppDelegate.swift in Sources */,
 				07CABE9F243B9F8800260DEE /* UIImageView+DownloadImage.swift in Sources */,
 				07CABE9C243B5BD700260DEE /* NewsCell.swift in Sources */,
 				07CABE87243A841800260DEE /* UIViewController+FirstLaunch.swift in Sources */,
+				07CABEAA243C834800260DEE /* NewsLoader.swift in Sources */,
+				07CABEA1243C821700260DEE /* NewsLoaderManager.swift in Sources */,
 				07CABE7D24375DA900260DEE /* MenuTabBarController.swift in Sources */,
 				07CABE81243815B200260DEE /* UIViewController+AppNavigationFlow.swift in Sources */,
 				07CABE89243A84AC00260DEE /* UIApplication+.swift in Sources */,
 				07CABE6624353FB000260DEE /* TutorialCell.swift in Sources */,
 				07CABE782436382700260DEE /* CameraPermissionsViewController.swift in Sources */,
-				07CABE99243B5AD600260DEE /* JsonHandler.swift in Sources */,
+				07CABE99243B5AD600260DEE /* JsonLoader.swift in Sources */,
 				07CABE6B243543B400260DEE /* OnboardingViewController.swift in Sources */,
 				07CABE6E2435443100260DEE /* CrossButton.swift in Sources */,
+				07CABEA8243C830500260DEE /* News.swift in Sources */,
 				07CABE0F24322EE100260DEE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
