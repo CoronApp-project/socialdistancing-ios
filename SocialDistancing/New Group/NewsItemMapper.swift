@@ -27,9 +27,8 @@ final class NewsItemMapper {
         }
 
         let arrNews = root.map { return $0.item }
-        //TODO: filter by country
-//        let countryNews = arrNews.filter { $0.locale.lowercased() == Locale.current.languageCode }
+        let countryNews = arrNews.filter { $0.locale.lowercased() == Locale.current.languageCode }
         
-        return .success(arrNews)
+        return .success(countryNews)
     }
 }
