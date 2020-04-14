@@ -32,8 +32,6 @@ final class JsonLoaderHandler: JsonLoader {
                 completion(.failure(Error.invalidJson))
             }
             
-            
-            
         } else {
             completion(.failure(Error.invalidPath))
         }

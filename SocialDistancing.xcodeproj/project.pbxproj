@@ -24,7 +24,6 @@
 		07CABE6B243543B400260DEE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE69243543B400260DEE /* OnboardingViewController.swift */; };
 		07CABE6C243543B400260DEE /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE6A243543B400260DEE /* OnboardingViewController.xib */; };
 		07CABE6E2435443100260DEE /* CrossButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE6D2435443100260DEE /* CrossButton.swift */; };
-		07CABE71243583BD00260DEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE70243583BD00260DEE /* ViewController.swift */; };
 		07CABE732435E03A00260DEE /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE722435E03A00260DEE /* SplashViewController.swift */; };
 		07CABE752436176D00260DEE /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE742436176D00260DEE /* SplashViewController.xib */; };
 		07CABE782436382700260DEE /* CameraPermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE762436382700260DEE /* CameraPermissionsViewController.swift */; };
@@ -49,6 +48,8 @@
 		07CABEA6243C82A100260DEE /* JsonLoaderHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABEA5243C82A100260DEE /* JsonLoaderHandler.swift */; };
 		07CABEA8243C830500260DEE /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABEA7243C830500260DEE /* News.swift */; };
 		07CABEAA243C834800260DEE /* NewsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABEA9243C834800260DEE /* NewsLoader.swift */; };
+		07CB26DA2445A974000723AA /* NearbyDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CB26D82445A974000723AA /* NearbyDetectionViewController.swift */; };
+		07CB26DB2445A974000723AA /* NearbyDetectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CB26D92445A974000723AA /* NearbyDetectionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,7 +72,6 @@
 		07CABE69243543B400260DEE /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		07CABE6A243543B400260DEE /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
 		07CABE6D2435443100260DEE /* CrossButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossButton.swift; sourceTree = "<group>"; };
-		07CABE70243583BD00260DEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07CABE722435E03A00260DEE /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		07CABE742436176D00260DEE /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		07CABE762436382700260DEE /* CameraPermissionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPermissionsViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +96,8 @@
 		07CABEA5243C82A100260DEE /* JsonLoaderHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonLoaderHandler.swift; sourceTree = "<group>"; };
 		07CABEA7243C830500260DEE /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		07CABEA9243C834800260DEE /* NewsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsLoader.swift; sourceTree = "<group>"; };
+		07CB26D82445A974000723AA /* NearbyDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyDetectionViewController.swift; sourceTree = "<group>"; };
+		07CB26D92445A974000723AA /* NearbyDetectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NearbyDetectionViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 				07CABE90243B314000260DEE /* ARViewController.xib */,
 				07CABE95243B524500260DEE /* NewsViewController.xib */,
 				07CABE9B243B5BD700260DEE /* NewsCell.xib */,
+				07CB26D92445A974000723AA /* NearbyDetectionViewController.xib */,
 				07CABE722435E03A00260DEE /* SplashViewController.swift */,
 				07CABE762436382700260DEE /* CameraPermissionsViewController.swift */,
 				07CABE69243543B400260DEE /* OnboardingViewController.swift */,
@@ -188,7 +191,7 @@
 				07CABE92243B325C00260DEE /* ARViewController.swift */,
 				07CABE94243B524500260DEE /* NewsViewController.swift */,
 				07CABE9A243B5BD700260DEE /* NewsCell.swift */,
-				07CABE70243583BD00260DEE /* ViewController.swift */,
+				07CB26D82445A974000723AA /* NearbyDetectionViewController.swift */,
 				07CABE682435437E00260DEE /* Class Components */,
 				07CABEAB243C841F00260DEE /* Helpers */,
 				07CABE552433FA6900260DEE /* Colors */,
@@ -289,6 +292,7 @@
 				07CABE6724353FB000260DEE /* TutorialCell.xib in Resources */,
 				07CABE792436382700260DEE /* CameraPermissionsViewController.xib in Resources */,
 				07CABE8B243B2B1F00260DEE /* news.json in Resources */,
+				07CB26DB2445A974000723AA /* NearbyDetectionViewController.xib in Resources */,
 				07CABE4B2433F18200260DEE /* ColorTheme.xcassets in Resources */,
 				07CABE542433FA4300260DEE /* OpenSans-Regular.ttf in Resources */,
 				07CABE9D243B5BD700260DEE /* NewsCell.xib in Resources */,
@@ -307,7 +311,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07CABE71243583BD00260DEE /* ViewController.swift in Sources */,
 				07CABE732435E03A00260DEE /* SplashViewController.swift in Sources */,
 				07CABE57243403EF00260DEE /* FontsStyle.swift in Sources */,
 				07CABE93243B325C00260DEE /* ARViewController.swift in Sources */,
@@ -319,6 +322,7 @@
 				07CABE612434D77900260DEE /* BlueButton.swift in Sources */,
 				07CABE0D24322EE100260DEE /* AppDelegate.swift in Sources */,
 				07CABE9F243B9F8800260DEE /* UIImageView+DownloadImage.swift in Sources */,
+				07CB26DA2445A974000723AA /* NearbyDetectionViewController.swift in Sources */,
 				07CABE9C243B5BD700260DEE /* NewsCell.swift in Sources */,
 				07CABE87243A841800260DEE /* UIViewController+FirstLaunch.swift in Sources */,
 				07CABEAA243C834800260DEE /* NewsLoader.swift in Sources */,

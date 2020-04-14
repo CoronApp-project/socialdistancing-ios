@@ -13,7 +13,7 @@ final class NewsLoaderManager: NewsLoader {
         case invalidMapper, invalidData
     }
     
-    public typealias Result = LoadNewsResult
+    public typealias Result = NewsLoadResult
     
     private let jsonLoader: JsonLoader
     
@@ -21,7 +21,7 @@ final class NewsLoaderManager: NewsLoader {
         self.jsonLoader = jsonLoader
     }
     
-    func load(completion: @escaping (Result) -> Void) {
+    func load(completion: @escaping (NewsLoadResult) -> Void) {
         
         jsonLoader.get { [weak self] result in
             guard self != nil else { return }

@@ -7,11 +7,11 @@
 
 import Foundation
 
-public enum JsonLoaderResult {
+enum JsonLoaderResult {
     case success(Data)
     case failure(Error)
 }
 
-public protocol JsonLoader {
-    func get(completion: @escaping (JsonLoaderResult) -> Void)
+protocol JsonLoader {
+    func get(completion: @escaping (JsonLoaderResult) -> ())
 }

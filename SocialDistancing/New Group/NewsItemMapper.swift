@@ -22,11 +22,11 @@ final class NewsItemMapper {
     }
     
     internal static func map(_ data: Data) -> NewsLoaderManager.Result {
-        guard let root = try? JSONDecoder().decode([Item].self, from: data) else {
+        guard let item = try? JSONDecoder().decode([Item].self, from: data) else {
             return .failure(NewsLoaderManager.Error.invalidMapper)
         }
 
-        let arrNews = root.map { return $0.item }
+        let arrNews = item.map { return $0.item }
         let countryNews = arrNews.filter { $0.locale.lowercased() == Locale.current.languageCode }
         
         return .success(countryNews)

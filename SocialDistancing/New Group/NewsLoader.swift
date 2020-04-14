@@ -7,11 +7,11 @@
 
 import Foundation
 
-enum LoadNewsResult {
+enum NewsLoadResult {
     case success([News])
     case failure(Error)
 }
 
 protocol NewsLoader {
-    func load(completion: @escaping (LoadNewsResult) -> Void)
+    func load(completion: @escaping (NewsLoadResult) -> ())
 }

@@ -15,18 +15,22 @@ final class MenuTabBarController: UITabBarController, UITabBarControllerDelegate
         
         self.delegate = self
         
-        //TODO: shouldnt be here
+        //TODO: ??
         let jsonLoader = JsonLoaderHandler(resourceName: "news", fileExtension: "json")
         let newsLoader = NewsLoaderManager(jsonLoader: jsonLoader)
         
         let firstVC = NewsViewController(newsLoader: newsLoader)
         let secondVC = ARViewController()
+        let thirdVC = NearbyDetectionViewController()
+        
         let tabOneBarItem = UITabBarItem(title: "News", image: UIImage(), selectedImage: UIImage())
         let tabTwoBarItem2 = UITabBarItem(title: "AR", image: UIImage(), selectedImage: UIImage())
+        let tabTwoBarItem3 = UITabBarItem(title: "Bluetooth", image: UIImage(), selectedImage: UIImage())
         
         firstVC.tabBarItem = tabOneBarItem
         secondVC.tabBarItem = tabTwoBarItem2
-        self.viewControllers = [firstVC, secondVC]
+        thirdVC.tabBarItem = tabTwoBarItem3
+        self.viewControllers = [firstVC, secondVC, thirdVC]
     }
     
     

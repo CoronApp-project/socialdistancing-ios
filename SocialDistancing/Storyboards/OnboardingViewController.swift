@@ -104,7 +104,7 @@ final class OnboardingViewController: UIViewController, UICollectionViewDelegate
         startButton.isHidden = true
         closeButton.isHidden = firstTimeAppLaunches
     }
-    
+    //TODO: localize
     private func setupArrViewData() {
         let firstPage = TutorialViewData(imageName: "iconDistance",
                                          headline: "Keep distance",

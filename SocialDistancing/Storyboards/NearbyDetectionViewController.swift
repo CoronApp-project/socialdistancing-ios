@@ -1,24 +1,26 @@
 //
-//  ViewController.swift
+//  NearbyDetectionViewController.swift
 //  SocialDistancing
 //
-//  Created by AndreaRov on 02/04/2020.
+//  Created by AndreaRov on 14/04/2020.
 //
 
 import UIKit
 import UserNotifications
 import CoreBluetooth
 
-final class ViewController: UIViewController, CBCentralManagerDelegate {
+//TODO: refactor
+
+final class NearbyDetectionViewController: UIViewController, CBCentralManagerDelegate {
     
     var centralManager: CBCentralManager!
     let center = UNUserNotificationCenter.current()
     
     private let alert = UIAlertController(title: "⚠️ Attention!", message: "You are too close to another person. Move away until you see this alert disappear", preferredStyle: .alert)
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         centralManager = CBCentralManager(delegate: self, queue: nil)
         
         
@@ -31,19 +33,11 @@ final class ViewController: UIViewController, CBCentralManagerDelegate {
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         
         switch central.state {
-        case .unknown:
-            debugPrint("central.state is .unknown")
-        case .resetting:
-            debugPrint("central.state is .resetting")
-        case .unsupported:
-            debugPrint("central.state is .unsupported")
-        case .unauthorized:
-            debugPrint("central.state is .unauthorized")
-        case .poweredOff:
-            debugPrint("central.state is .poweredOff")
         case .poweredOn:
             debugPrint("central.state is .poweredOn")
             centralManager.scanForPeripherals(withServices: nil)
+        default :
+            break
         }
     }
     
@@ -91,6 +85,7 @@ final class ViewController: UIViewController, CBCentralManagerDelegate {
         
         
     }
-    
-    
+
+
+
 }
