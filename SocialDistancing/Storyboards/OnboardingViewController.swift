@@ -84,7 +84,6 @@ final class OnboardingViewController: UIViewController, UICollectionViewDelegate
         
         
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: carousel.frame.width, height: carousel.frame.height)
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
         layout.scrollDirection = .horizontal
@@ -121,6 +120,11 @@ final class OnboardingViewController: UIViewController, UICollectionViewDelegate
     }
     
     //MARK: - Collection View
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        return CGSize(width: carousel.frame.width, height: carousel.frame.height)
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 3
