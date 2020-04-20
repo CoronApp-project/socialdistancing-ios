@@ -33,6 +33,8 @@ final class NewsViewController: UIViewController, UITableViewDelegate, UITableVi
         tableView.dataSource = self
         let nib = UINib.init(nibName: "NewsCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: NewsCell.identifier)
+        let nib2 = UINib.init(nibName: "HeaderCell", bundle: nil)
+        tableView.register(nib2, forCellReuseIdentifier: HeaderCell.identifier)
         tableView.separatorStyle = .none
         loadNews()
     }
@@ -55,21 +57,44 @@ final class NewsViewController: UIViewController, UITableViewDelegate, UITableVi
     
     //MARK: - Table View Delegate and DataSource
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrNews.count
+        if section == 0 {
+            return 1
+        } else {
+            return arrNews.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+
+        guard let headerCell = tableView.dequeueReusableCell(withIdentifier: HeaderCell.identifier) as? HeaderCell else {
+            fatalError("You've forgotten to register the cell: HeaderCell")
+        }
+
         guard let cell = tableView.dequeueReusableCell(withIdentifier: NewsCell.identifier, for: indexPath) as? NewsCell else {
             fatalError("You've forgotten to register the cell: NewsCell")
         }
-         
-        cell.titleLabel.text = arrNews[indexPath.row].title
-        cell.descriptionLabel.text = arrNews[indexPath.row].description
-        cell.newsImageView.imageFromServerURL(arrNews[indexPath.row].photo, contentMode: .scaleToFill)
         
-        return cell
+        //        if indexPath.section == 0 {
+        //            return headerCell
+        //        }
+        //
+        
+        if indexPath.section == 0 {
+            return headerCell
+        } else {
+            cell.titleLabel.text = arrNews[indexPath.row].title
+            cell.descriptionLabel.text = arrNews[indexPath.row].description
+            cell.newsImageView.imageFromServerURL(arrNews[indexPath.row].photo, contentMode: .scaleToFill)
+            
+            return cell
+        }
+         
+
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

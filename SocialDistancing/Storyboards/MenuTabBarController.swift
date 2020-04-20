@@ -23,14 +23,16 @@ final class MenuTabBarController: UITabBarController, UITabBarControllerDelegate
         let onboardingVC = OnboardingViewController()
         let thirdVC = OnboardingViewController()
         
-        let tabOneBarItem = UITabBarItem(title: "News", image: UIImage(), selectedImage: UIImage())
-        let tabTwoBarItem = UITabBarItem(title: "Start", image: UIImage(), selectedImage: UIImage())
-        let tabThreeBarItem = UITabBarItem(title: "Help", image: UIImage(), selectedImage: UIImage())
+        let tabOneBarItem = UITabBarItem(title: "News", image: UIImage(named: "newspaper"), selectedImage: UIImage(named: "newspaperSelected"))
+        let tabTwoBarItem = UITabBarItem(title: "Start", image: UIImage(named: "arview"), selectedImage: UIImage(named: "arview"))
+        let tabThreeBarItem = UITabBarItem(title: "Help", image: UIImage(named: "question"), selectedImage: UIImage(named: "questionSelected"))
             
         firstVC.tabBarItem = tabOneBarItem
         secondVC.tabBarItem = tabTwoBarItem
         thirdVC.tabBarItem = tabThreeBarItem
         self.viewControllers = [firstVC, secondVC, thirdVC]
+        
+        self.selectedIndex = 1
     }
     
     

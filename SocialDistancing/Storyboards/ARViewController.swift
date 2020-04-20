@@ -14,7 +14,7 @@ class ARViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         questionButton.addTarget(self, action: #selector(didPressQuestionMarkButton), for: .touchUpInside)
-        debugPrint(firstTimeAppLaunches)
+        questionButton.isHidden = true
     }
     
     @objc func didPressQuestionMarkButton() {

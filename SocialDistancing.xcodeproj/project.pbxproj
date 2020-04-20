@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		071AC567244DAD36004A4109 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071AC565244DAD36004A4109 /* HeaderCell.swift */; };
+		071AC568244DAD36004A4109 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 071AC566244DAD36004A4109 /* HeaderCell.xib */; };
 		07CABE0D24322EE100260DEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE0C24322EE100260DEE /* AppDelegate.swift */; };
 		07CABE0F24322EE100260DEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CABE0E24322EE100260DEE /* SceneDelegate.swift */; };
 		07CABE1424322EE100260DEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CABE1224322EE100260DEE /* Main.storyboard */; };
@@ -53,6 +55,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		071AC565244DAD36004A4109 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		071AC566244DAD36004A4109 /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
 		07CABE0924322EE100260DEE /* SocialDistancing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialDistancing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07CABE0C24322EE100260DEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07CABE0E24322EE100260DEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,6 +185,7 @@
 				07CABE8E243B2F9600260DEE /* MenuTabBarController.xib */,
 				07CABE90243B314000260DEE /* ARViewController.xib */,
 				07CABE95243B524500260DEE /* NewsViewController.xib */,
+				071AC566244DAD36004A4109 /* HeaderCell.xib */,
 				07CABE9B243B5BD700260DEE /* NewsCell.xib */,
 				07CB26D92445A974000723AA /* NearbyDetectionViewController.xib */,
 				07CABE722435E03A00260DEE /* SplashViewController.swift */,
@@ -190,6 +195,7 @@
 				07CABE7C24375DA900260DEE /* MenuTabBarController.swift */,
 				07CABE92243B325C00260DEE /* ARViewController.swift */,
 				07CABE94243B524500260DEE /* NewsViewController.swift */,
+				071AC565244DAD36004A4109 /* HeaderCell.swift */,
 				07CABE9A243B5BD700260DEE /* NewsCell.swift */,
 				07CB26D82445A974000723AA /* NearbyDetectionViewController.swift */,
 				07CABE682435437E00260DEE /* Class Components */,
@@ -300,6 +306,7 @@
 				07CABE502433FA2B00260DEE /* OpenSans-Bold.ttf in Resources */,
 				07CABE8F243B2F9600260DEE /* MenuTabBarController.xib in Resources */,
 				07CABE1424322EE100260DEE /* Main.storyboard in Resources */,
+				071AC568244DAD36004A4109 /* HeaderCell.xib in Resources */,
 				07CABE91243B314000260DEE /* ARViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +331,7 @@
 				07CABE9F243B9F8800260DEE /* UIImageView+DownloadImage.swift in Sources */,
 				07CB26DA2445A974000723AA /* NearbyDetectionViewController.swift in Sources */,
 				07CABE9C243B5BD700260DEE /* NewsCell.swift in Sources */,
+				071AC567244DAD36004A4109 /* HeaderCell.swift in Sources */,
 				07CABE87243A841800260DEE /* UIViewController+FirstLaunch.swift in Sources */,
 				07CABEAA243C834800260DEE /* NewsLoader.swift in Sources */,
 				07CABEA1243C821700260DEE /* NewsLoaderManager.swift in Sources */,
