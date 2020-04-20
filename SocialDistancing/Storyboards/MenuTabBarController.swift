@@ -11,9 +11,8 @@ final class MenuTabBarController: UITabBarController, UITabBarControllerDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        firstTimeAppLaunches(false)
-        
         self.delegate = self
+        firstTimeAppLaunches(false)
         
         //TODO: ??
         let jsonLoader = JsonLoaderHandler(resourceName: "news", fileExtension: "json")
@@ -21,17 +20,21 @@ final class MenuTabBarController: UITabBarController, UITabBarControllerDelegate
         
         let firstVC = NewsViewController(newsLoader: newsLoader)
         let secondVC = ARViewController()
-        let thirdVC = NearbyDetectionViewController()
+        let onboardingVC = OnboardingViewController()
+        let thirdVC = OnboardingViewController()
         
         let tabOneBarItem = UITabBarItem(title: "News", image: UIImage(), selectedImage: UIImage())
-        let tabTwoBarItem2 = UITabBarItem(title: "AR", image: UIImage(), selectedImage: UIImage())
-        let tabTwoBarItem3 = UITabBarItem(title: "Bluetooth", image: UIImage(), selectedImage: UIImage())
-        
+        let tabTwoBarItem = UITabBarItem(title: "Start", image: UIImage(), selectedImage: UIImage())
+        let tabThreeBarItem = UITabBarItem(title: "Help", image: UIImage(), selectedImage: UIImage())
+            
         firstVC.tabBarItem = tabOneBarItem
-        secondVC.tabBarItem = tabTwoBarItem2
-        thirdVC.tabBarItem = tabTwoBarItem3
+        secondVC.tabBarItem = tabTwoBarItem
+        thirdVC.tabBarItem = tabThreeBarItem
         self.viewControllers = [firstVC, secondVC, thirdVC]
     }
     
     
 }
+
+// NearbyDetectionViewController()
+//        let tabTwoBarItem3 = UITabBarItem(title: "Bluetooth", image: UIImage(), selectedImage: UIImage())

@@ -101,8 +101,16 @@ final class OnboardingViewController: UIViewController, UICollectionViewDelegate
         skipButton.style = .white
         nextButton.style = .blue
         startButton.style = .blue
+        
+//        closeButton.isHidden = firstTimeAppLaunches
+        closeButton.isHidden = true
         startButton.isHidden = true
-        closeButton.isHidden = firstTimeAppLaunches
+        
+        if !firstTimeAppLaunches {
+            nextButton.isHidden = true
+            skipButton.isHidden = true
+        }
+        
     }
     //TODO: localize
     private func setupArrViewData() {
@@ -145,13 +153,16 @@ final class OnboardingViewController: UIViewController, UICollectionViewDelegate
     func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         page.currentPage = currentPageNumber
         
-        if currentPageNumber == 2 {
-            buttonsView.isHidden = true
-            startButton.isHidden = false
-        } else {
-            buttonsView.isHidden = false
-            startButton.isHidden = true
+        if firstTimeAppLaunches {
+            if currentPageNumber == 2 {
+                buttonsView.isHidden = true
+                startButton.isHidden = false
+            } else {
+                buttonsView.isHidden = false
+                startButton.isHidden = true
+            }
         }
+        
     }
     
 }
