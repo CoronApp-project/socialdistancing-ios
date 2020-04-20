@@ -26,13 +26,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Knn-Tb-NL6">
-                        <rect key="frame" x="0.0" y="45" width="382" height="16.5"/>
+                        <rect key="frame" x="10" y="45" width="372" height="16.5"/>
                         <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="14"/>
                         <color key="textColor" name="mainText"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Guv-Ov-I2z">
-                        <rect key="frame" x="0.0" y="68.5" width="382" height="30.5"/>
+                        <rect key="frame" x="10" y="68.5" width="372" height="30.5"/>
                         <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="26"/>
                         <color key="textColor" name="mainText"/>
                         <nil key="highlightedColor"/>
@@ -41,11 +41,11 @@
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="Knn-Tb-NL6" secondAttribute="trailing" id="9U1-XT-qaG"/>
                     <constraint firstAttribute="trailing" secondItem="Guv-Ov-I2z" secondAttribute="trailing" id="JCy-0f-GfH"/>
-                    <constraint firstItem="Guv-Ov-I2z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Qds-ti-1E7"/>
+                    <constraint firstItem="Guv-Ov-I2z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Qds-ti-1E7"/>
                     <constraint firstItem="Knn-Tb-NL6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="45" id="aKO-xh-Zs8"/>
                     <constraint firstItem="Guv-Ov-I2z" firstAttribute="top" secondItem="Knn-Tb-NL6" secondAttribute="bottom" constant="7" id="eM9-eT-kWr"/>
                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Guv-Ov-I2z" secondAttribute="bottom" constant="10" id="pfR-yl-VjH"/>
-                    <constraint firstItem="Knn-Tb-NL6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="z8Y-HM-Hya"/>
+                    <constraint firstItem="Knn-Tb-NL6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="z8Y-HM-Hya"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
