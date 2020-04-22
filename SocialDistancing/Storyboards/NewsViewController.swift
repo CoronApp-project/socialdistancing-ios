@@ -85,6 +85,7 @@ final class NewsViewController: UIViewController, UITableViewDelegate, UITableVi
         //
         
         if indexPath.section == 0 {
+            headerCell.isUserInteractionEnabled = false
             return headerCell
         } else {
             cell.titleLabel.text = arrNews[indexPath.row].title

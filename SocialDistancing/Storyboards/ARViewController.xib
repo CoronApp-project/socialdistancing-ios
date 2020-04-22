@@ -32,6 +32,7 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Wap-99-KuN" secondAttribute="trailing" constant="5" id="8wr-pL-2fa"/>
                 <constraint firstItem="Wap-99-KuN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="YnH-bX-G1e"/>
             </constraints>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
         </view>

@@ -16,6 +16,7 @@ final class OnboardingViewController: UIViewController, UICollectionViewDelegate
     @IBOutlet weak private var skipButton: BlueButton!
     @IBOutlet weak private var nextButton: BlueButton!
     @IBOutlet weak private var startButton: BlueButton!
+    @IBOutlet weak var buttonViewHeight: NSLayoutConstraint!
     
     private var currentPageNumber: Int = 0
     private var arrViewData: [TutorialViewData] = []
@@ -105,10 +106,12 @@ final class OnboardingViewController: UIViewController, UICollectionViewDelegate
 //        closeButton.isHidden = firstTimeAppLaunches
         closeButton.isHidden = true
         startButton.isHidden = true
+        buttonViewHeight.constant = 38
         
         if !firstTimeAppLaunches {
             nextButton.isHidden = true
             skipButton.isHidden = true
+            buttonViewHeight.constant = 0
         }
         
     }

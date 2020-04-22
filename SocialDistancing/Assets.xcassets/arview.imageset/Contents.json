@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "ar-view.png",
+      "filename" : "arview.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "ar-view2x.png",
+      "filename" : "arview2x.png",
       "scale" : "2x"
     },
     {

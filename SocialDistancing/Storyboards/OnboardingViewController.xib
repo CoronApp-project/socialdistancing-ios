@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingViewController" customModule="SocialDistancing" customModuleProvider="target">
             <connections>
+                <outlet property="buttonViewHeight" destination="1FG-7O-pyS" id="PMd-Z3-lEq"/>
                 <outlet property="buttonsView" destination="Vgn-GR-OPj" id="TRy-r3-KWg"/>
                 <outlet property="carousel" destination="cIW-0a-aB9" id="Ro1-gq-Usf"/>
                 <outlet property="closeButton" destination="cgw-lA-10g" id="GGr-z5-C42"/>
