@@ -79,11 +79,6 @@ final class NewsViewController: UIViewController, UITableViewDelegate, UITableVi
             fatalError("You've forgotten to register the cell: NewsCell")
         }
         
-        //        if indexPath.section == 0 {
-        //            return headerCell
-        //        }
-        //
-        
         if indexPath.section == 0 {
             headerCell.isUserInteractionEnabled = false
             return headerCell

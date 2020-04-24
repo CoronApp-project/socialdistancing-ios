@@ -14,7 +14,6 @@ final class MenuTabBarController: UITabBarController, UITabBarControllerDelegate
         self.delegate = self
         firstTimeAppLaunches(false)
         
-        //TODO: ??
         let jsonLoader = JsonLoaderHandler(resourceName: "news", fileExtension: "json")
         let newsLoader = NewsLoaderManager(jsonLoader: jsonLoader)
         

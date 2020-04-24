@@ -137,7 +137,7 @@
 				07CABE0C24322EE100260DEE /* AppDelegate.swift */,
 				07CABE0E24322EE100260DEE /* SceneDelegate.swift */,
 				07CABE6F243582A700260DEE /* Storyboards */,
-				07CABEA2243C822F00260DEE /* New Group */,
+				07CABEA2243C822F00260DEE /* News data */,
 				07CABE1524322EE200260DEE /* Assets.xcassets */,
 				07CABE1A24322EE200260DEE /* Info.plist */,
 				07CABE1724322EE200260DEE /* LaunchScreen.storyboard */,
@@ -206,7 +206,7 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		07CABEA2243C822F00260DEE /* New Group */ = {
+		07CABEA2243C822F00260DEE /* News data */ = {
 			isa = PBXGroup;
 			children = (
 				07CABE98243B5AD600260DEE /* JsonLoader.swift */,
@@ -217,7 +217,7 @@
 				07CABEA3243C824D00260DEE /* NewsItemMapper.swift */,
 				07CABE8A243B2B1F00260DEE /* news.json */,
 			);
-			path = "New Group";
+			path = "News data";
 			sourceTree = "<group>";
 		};
 		07CABEAB243C841F00260DEE /* Helpers */ = {

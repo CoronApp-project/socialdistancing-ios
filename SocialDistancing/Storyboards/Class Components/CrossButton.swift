@@ -9,7 +9,7 @@ import UIKit
 
 final class CrossButton: UIButton {
     
-//    private var crossImage: UIImage? = UIImage(named: "closeIcon") //TODO: force crashed
+//    private var crossImage: UIImage? = UIImage(named: "closeIcon") //TODO: if uncomment app crash
     private let crossSize: CGFloat = 17
     
     override init(frame: CGRect) {
